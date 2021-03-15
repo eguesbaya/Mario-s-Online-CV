@@ -1,2 +1,2 @@
 # Project-1
-Premier projet à la Wild Code School - CV en ligne de Mario
+First project @WildCodeSchool - Mario's online CV
