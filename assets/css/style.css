@@ -1,0 +1,23 @@
+:root{
+    /*Variables*/
+    --dark-blue: rgb(52,39,66);
+    --light-grey: rgb(225,214,191);
+    --green: rgb(82,133,58);
+    --light-blue: rgb(58,179,229);
+    --pale-blue: rgb(149,200,215);
+    --blue: rgb(52,87,142);
+    --red: rgb(215,38,38);
+    --yellow: rgb(223,169,36);
+    --grey-blue: rgb(94,145,137);
+    --mario-blue: rgb(40,67,156);
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    height: 300px;
+    width: 100vw;
+    background-color: var(--red);
+}
