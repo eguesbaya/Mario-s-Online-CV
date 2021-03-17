@@ -1,0 +1,39 @@
+.langages{
+    padding: var(--spacing);
+}
+
+.langages > h2{
+    font-family: var(--font-titles);
+    font-size: var(--fontSize-title-others);
+    letter-spacing: var(--spacing-letters-titles);
+    color: var(--font-medium);
+}
+
+.flagsCards{
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-others);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0.2px 0.2px 2px black;
+    border-radius: 5px;
+    padding: var(--spacing);
+}
+
+.flag{
+    margin-bottom: var(--spacing);
+}
+
+.flag > img{
+    width: 100px;
+    height: 100px;
+}
+
+.mario-head-flags{
+    transform: scaleX(-1);
+}
+
