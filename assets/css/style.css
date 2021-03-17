@@ -16,6 +16,10 @@ body{
     margin: 0;
 }
 
+*{
+	box-sizing: border-box;
+}
+
 header{
     height: 300px;
     width: 100vw;
