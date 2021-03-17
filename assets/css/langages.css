@@ -1,5 +1,8 @@
 .langages{
     padding: var(--spacing);
+    margin: var(--spacing);
+    background-color: var(--background-light);
+    border-radius: 15px;
 }
 
 .langages > h2{
@@ -7,11 +10,14 @@
     font-size: var(--fontSize-title-others);
     letter-spacing: var(--spacing-letters-titles);
     color: var(--font-medium);
+    text-decoration: underline;
+    margin-bottom: calc(var(--spacing)*2);
 }
 
 .flagsCards{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
     font-family: var(--font-others);
 }
 
@@ -22,18 +28,29 @@
     box-shadow: 0.2px 0.2px 2px black;
     border-radius: 5px;
     padding: var(--spacing);
+    background-color: white;
+    margin: var(--spacing);
 }
 
 .flag{
-    margin-bottom: var(--spacing);
+    margin-bottom: var(--spacing);  
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
-.flag > img{
-    width: 100px;
-    height: 100px;
+.flag-img{
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
 }
 
-.mario-head-flags{
+.mario-head-flag{
     transform: scaleX(-1);
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    bottom: calc(var(--spacing) * 2.5);
+    left: var(--spacing);
 }
 
