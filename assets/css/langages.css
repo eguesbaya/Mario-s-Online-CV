@@ -2,7 +2,7 @@
     padding: var(--spacing);
     margin: var(--spacing);
     background-color: var(--background-light);
-    border-radius: 15px;
+    border-radius: 30px;
 }
 
 .langages > h2{
@@ -12,6 +12,7 @@
     color: var(--font-medium);
     text-decoration: underline;
     margin-bottom: calc(var(--spacing)*2);
+    margin-left: var(--spacing);
 }
 
 .flagsCards{
@@ -21,7 +22,7 @@
     font-family: var(--font-others);
 }
 
-.card{
+.flagsCards > .card{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -32,25 +33,44 @@
     margin: var(--spacing);
 }
 
-.flag{
+.card > .flag{
     margin-bottom: var(--spacing);  
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
-.flag-img{
+.flag > .flag-img{
     object-fit: cover;
     width: 150px;
     height: 150px;
 }
 
-.mario-head-flag{
+.flag > .mario-head-flag{
     transform: scaleX(-1);
-    width: 70px;
-    height: 70px;
+    width: 40%;
+    height: 40%;
     position: absolute;
     bottom: calc(var(--spacing) * 2.5);
     left: var(--spacing);
+}
+
+.flagsCards > .card:hover{
+    transform: rotate(10deg);
+}
+
+.card:hover .mario-head-flag{
+    animation: moveMarioHead 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveMarioHead{
+    0%{
+        left: 0%;
+    }
+
+    100%{
+        left: 65%;
+    }
 }
 
