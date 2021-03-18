@@ -22,7 +22,7 @@
     font-family: var(--font-others);
 }
 
-.flagsCards > .card{
+.flagsCards .card{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -33,14 +33,14 @@
     margin: var(--spacing);
 }
 
-.card > .flag{
-    margin-bottom: var(--spacing);  
+.card .flag{
     display: flex;
+    margin-bottom: var(--spacing);  
     flex-direction: column;
     position: relative;
 }
 
-.flag > .flag-img{
+.flag .flag-img{
     object-fit: cover;
     width: 150px;
     height: 150px;
