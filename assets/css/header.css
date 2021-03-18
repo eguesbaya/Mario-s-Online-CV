@@ -83,13 +83,10 @@
 
 @media screen and (max-width: 1230px) and (min-width: 640px){
     .header{
-        
         width: 100%;
-       
         position: -webkit-sticky;
         position: sticky;
         background-color: var(--background-red);
-
     }
     .navHeader{
         display: flexbox;
@@ -112,8 +109,8 @@
 /*------------------------------------------------------*/
     
     .presentation{
-        padding: 40px 40px 40px 40px;
-        display: flexbox;
+        padding: 40px;
+        display: flex;
         flex-direction:column-reverse;
         justify-content: center;
         text-align: center;
@@ -130,14 +127,15 @@
     
     
     .ImgMarioHalf{
-        width: 400px;
+        width: 100%;
     }
 }
 
 
 @media screen and (max-width: 640px){
-    h1{
-        font-size: calc(var(--fontSize-title)*0.8);
+
+    .BoxImgMarioHalf h1{
+        font-size: calc(var(--fontSize-title) - 4em);
         color: var( --font-light);
     }
 
@@ -161,7 +159,6 @@
     .navHeader a{
         text-decoration:none; 
         border: var(--borderSolid); 
-        font-size:1.7em;
         text-align: center;
         width: 80%;
         margin: 10px;
@@ -179,7 +176,7 @@
     
 /*------------------------------------------------------*/
     .presentation{
-        padding: 0;
+        padding-top: 40px;
         display: flexbox;
         flex-direction:column-reverse;
         justify-content: center;
@@ -188,6 +185,19 @@
 
     .boxTextPresentation{
         display:none;
+    }
+
+    .boxTextPresentation{
+        width: 90%;
+    }
+
+    .BoxImgMarioHalf{
+        width: 100%;
+    }
+    
+    
+    .ImgMarioHalf{
+        width: 100%;
     }
 
 }

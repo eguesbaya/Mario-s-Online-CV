@@ -36,13 +36,10 @@
     
     --spacing-letters-titles: 0.3em;
     /*--fontSize-title: 6em;
-    --fontSize-title-others: calc(var(--fontSize-title) - 0.2em);
-    */
-
-
+    --fontSize-title-others: calc(var(--fontSize-title) - 0.2em);*/
+    
     /*spacing*/
     --spacing: 8px;
-
     --borderSolid: solid 3px;
 }
 
@@ -52,9 +49,14 @@
     padding: 0;
 }
 
+body{
+    padding: 0 var(--spacing);
+    background-color: var(--background-light);
+}
+
 h1{
     font-family: var(--font-titles) ;
-    font-size: var(--fontSize-title);
+    font-size: calc(var(--fontSize-title) - 2em);
     color: var( --font-light);
     letter-spacing:var(--spacing-letters-titles);
 }
