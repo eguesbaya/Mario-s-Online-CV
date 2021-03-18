@@ -26,7 +26,7 @@
     /*Variables: font style*/
     --font-titles: "mario";
     --font-others: 'Roboto Condensed';
-    --fontSize-title: 0.8em;
+    --fontSize-title: 6em;
     --fontSize-title-others: calc(var(--fontSize-title) - 0.2em);
     --spacing-letters-titles: 0.3em;
 
@@ -39,3 +39,11 @@
     margin: 0;
     padding: 0;
 }
+
+h1{
+    font-family: var(--font-titles) ;
+    font-size: var(--fontSize-title);
+    color: var( --font-light);
+    letter-spacing:var(--spacing-letters-titles);
+}
+
