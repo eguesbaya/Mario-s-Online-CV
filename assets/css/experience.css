@@ -1,0 +1,79 @@
+.experience{
+    background-color: var(--background-light);
+    padding: var(--spacing);
+}
+
+.experience h4, .experience p{
+    font-family:var(--font-others);
+    width: 100%;
+    color: var(--font-medium);
+}
+
+.experience h2, .experience h3{
+    font-family: var(--font-titles);
+    color: var(--font-medium);
+}
+
+.intro-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+
+.intro-paragraph {
+    width: 40%;
+}
+
+.card-container{
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: var(--background-yellow);
+    width: 30%;
+    border-radius: 30px;
+    padding: 16px;
+    margin: 8px;
+    display:flex;
+    flex-direction: column;
+}
+
+.card-content{
+    flex:1;
+    text-align: justify;
+}
+
+.experience img{
+    width: 125px;
+    height: 125px;
+}
+
+@media screen and (min-width: 200px) and (max-width: 667px) {
+    .experience .card {
+      width: 100%;
+    }
+    .experience .card > p{
+        display:none;
+    }
+
+    .experience .intro-paragraph{
+        display:none;
+    }
+
+    .experience .card > img{
+        min-width:125px;
+    }
+}
+
+@media screen and (min-width: 667px) and (orientation: landscape) {
+    .experience .card{
+        width: 20%;
+    }
+}
+
