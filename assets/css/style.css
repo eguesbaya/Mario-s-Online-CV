@@ -39,3 +39,93 @@
     margin: 0;
     padding: 0;
 }
+
+/*Section 2: Work Experience (Emma)*/
+.experience{
+    background-color: var(--background-light);
+    padding: var(--spacing);
+}
+
+h4, p{
+    font-family:var(--font-others);
+    width: 100%;
+    color: var(--font-medium);
+}
+
+
+h2, h3{
+    font-family: var(--font-titles);
+    color: var(--font-medium);
+}
+
+
+.intro-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+
+.intro-paragraph {
+    width: 40%;
+}
+
+.card-container{
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: var(--background-yellow);
+    width: 30%;
+    border-radius: 30px;
+    padding: 16px;
+    margin: 8px;
+    display:flex;
+    flex-direction: column;
+
+}
+
+.card-content{
+    flex:1;
+    text-align: justify;
+}
+
+img{
+    width: 125px;
+    height: 125px;
+}
+
+/*.card > img {
+    max-height: 125px;
+}*/
+
+@media screen and (min-width: 200px) and (max-width: 667px) {
+    .card {
+      width: 100%;
+    }
+    .card > p{
+        display:none;
+    }
+
+    .intro-paragraph{
+        display:none;
+    }
+
+    .card > img{
+        min-width:125px;
+    }
+  }
+
+@media screen and (min-width: 667px) and (orientation: landscape) {
+      .card{
+          width: 20%;
+      }
+
+    }
+  }
+
