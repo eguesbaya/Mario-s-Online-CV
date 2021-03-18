@@ -1,17 +1,6 @@
-:root{
-    --borderSolid: solid 3px; 
-
-
-
-}
-
-
-
-/*--------------------------------------------------  HEADER nav   ----------------------------------------------------------*/
-
 .header{
     width: 100%;
-    height: 100px;/*#{var(--spacing) * 8};*/
+    height: 100px;
     position: -webkit-sticky;
     position: sticky;
     
@@ -19,51 +8,36 @@
 
 .navHeader{
     display: flex;
- 
     justify-content:space-around;
-
-    /*padding: var(--heightNav);*/
     background-color: var(--background-red);
     align-items: center;
-    
     width: 100%;
-    height: 100px;/*#{var(--spacing) * 8};*/
+    height: 100px;
     position: -webkit-sticky;
     position: sticky;
-    /*top: 20px;
-    padding-top: 50px;
-    padding-bottom: 50px;*/
 }
 
-.navHeader a{
+.navHeader > a{
     text-decoration:none; 
     border: var(--borderSolid);  
     color: var( --font-medium);
     font-family: var(--font-titles) ;
     font-size:1.3em;
-    
-
-
     padding: 10px;
     border-radius: 10px;
 }
 
-.navHeader a:hover{
+.navHeader > a:hover{
     text-decoration:none;   
     color: var( --font-medium);
     font-family: var(--font-titles) ;
     font-size:2em;
     background-color: var(--background-light);
-    
 }
 
 .ImgBurger{
-
     display: none;
 }
-
-
-
 
 /*--------------------------------    section Experience    ------------------------------*/
 .boxTextPresentation > p{
@@ -76,62 +50,36 @@
 .presentation{
     background-color: var(--background-red); 
     border-radius: 0  0 30px 30px ;
-    /*padding: 5%;*/
     text-align: center;
     display:flex;
     padding: 0 0 0 40px;
-    justify-content: center;
-       align-items:flex-end;
-
-
+    justify-content: space-around;
+    align-items:flex-end;
 }
 
 .boxTextPresentation{
     border: var(--borderSolid);
     border-color: var( --font-medium) ;
     background-color: var(--background-light);
-
     border-radius: 30px;
     padding: calc(var(--spacing)*7);
-   /* width: 50%;*/
     text-align: left;
-    margin: 0 0 40px 0;
-
-    
+    margin: 0 0 40px 0;    
 }
 
 .BoxImgMarioHalf{
-    
-display:flex;
-justify-content: center;
-align-items: flex-end;
-flex-direction: column;
-
-
-
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-left: var(--spacing);
 }
-
 
 .ImgMarioHalf{
     width: 400px;
     bottom: 0;
-margin: auto;
-    
-
+    margin: auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media screen and (max-width: 1230px) and (min-width: 640px){
     .header{
@@ -147,23 +95,15 @@ margin: auto;
         display: flexbox;
         flex-direction: column;
         justify-content: flex-start;
-    
-        /*padding: var(--heightNav);
-        background-color: var(--background-red);
-        align-items: center;*/
-        
         width: 100%;
-        height: auto;/*#{var(--spacing) * 8};*/
-
+        height: auto;
     }
 
     .navHeader a{
         text-decoration:none; 
-         
         text-align: center;
         width: 80%;
         margin: 10px;
-        
         padding: 16px;
         border-radius: 10px;
     }
@@ -172,89 +112,59 @@ margin: auto;
 /*------------------------------------------------------*/
     
     .presentation{
-padding: 40px 40px 40px 40px;
+        padding: 40px 40px 40px 40px;
         display: flexbox;
         flex-direction:column-reverse;
         justify-content: center;
         text-align: center;
         align-items: center;
     }
-    
-    
-
-    
+        
     .boxTextPresentation{
         width: 90%;
-        
-
     }
     
     .BoxImgMarioHalf{
-    
-    width: 100%;
-    
-    
-    
+        width: 100%;
     }
     
     
     .ImgMarioHalf{
         width: 400px;
-        
-    
-    
-    
     }
-    
-
-
-
 }
 
 
 @media screen and (max-width: 640px){
-   /* .BoxImgMarioHalf{
-        display: none;
-    }*/
     h1{
-        
         font-size: calc(var(--fontSize-title)*0.8);
         color: var( --font-light);
-        
     }
 
     .header{
-        
         width: 100%;
-       
         position: -webkit-sticky;
         position: sticky;
         background-color: var(--background-red);
-
     }
+
     .navHeader{
         display: flexbox;
         flex-direction: column;
         justify-content: flex-start;
-    
-        /*padding: var(--heightNav);*/
         background-color: var(--background-red);
         align-items: center;
-        
         width: 100%;
-        height: auto;/*#{var(--spacing) * 8};*/
-
+        height: auto;
     }
 
     .navHeader a{
         text-decoration:none; 
         border: var(--borderSolid); 
-
         font-size:1.7em;
         text-align: center;
         width: 80%;
         margin: 10px;
-        
         padding: 16px;
         border-radius: 10px;
     }
@@ -265,42 +175,19 @@ padding: 40px 40px 40px 40px;
         font-family: var(--font-titles) ;
         font-size:2em;
         background-color: var(--background-light);
-        
     }
     
 /*------------------------------------------------------*/
-.presentation{
+    .presentation{
+        padding: 0;
+        display: flexbox;
+        flex-direction:column-reverse;
+        justify-content: center;
+        text-align: center;
+    }
 
-    
-padding: 0;
-    display: flexbox;
-    flex-direction:column-reverse;
-    justify-content: center;
-    text-align: center;
-}
-
-
-/*
-
-.boxTextPresentation{
-    width: 80%;
-   
-
-}*/
-.boxTextPresentation{
-
-display:none;
-}
-
-
-/*
-.boxTextPresentation > p{
-        
-    font-size: 1.2em;
-    color: var( --font-medium);
-
-}*/
-
-
+    .boxTextPresentation{
+        display:none;
+    }
 
 }

@@ -1,3 +1,5 @@
+@import "cssHeader.css";
+
 @font-face{
     font-family: "mario";
     src: url("../../public/fonts/SuperMarioBrothers-4nmp.ttf");
@@ -32,6 +34,8 @@
 
     /*spacing*/
     --spacing: 8px;
+
+    --borderSolid: solid 3px;
 }
 
 *{
