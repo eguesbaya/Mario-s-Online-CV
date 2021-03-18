@@ -1,6 +1,7 @@
 @import "header.css";
 @import "experience.css";
 @import "langages.css";
+@import 'contact.css';
 
 @font-face{
     font-family: "mario";
@@ -32,9 +33,12 @@
     --font-others: 'Roboto Condensed';
     --fontSize-title: 8em;
     --fontSize-title-others: calc(var(--fontSize-title) - 6em);
+    
+    --spacing-letters-titles: 0.3em;
     /*--fontSize-title: 6em;
     --fontSize-title-others: calc(var(--fontSize-title) - 0.2em);
-    --spacing-letters-titles: 0.3em;*/
+    */
+
 
     /*spacing*/
     --spacing: 8px;
