@@ -1,4 +1,5 @@
 @import "cssHeader.css";
+@import "cssFooter.css";
 
 @font-face{
     font-family: "mario";
@@ -46,7 +47,7 @@
 
 h1{
     font-family: var(--font-titles) ;
-    font-size: var(--fontSize-title);
+    font-size: 4em;
     color: var( --font-light);
     letter-spacing:var(--spacing-letters-titles);
 }
