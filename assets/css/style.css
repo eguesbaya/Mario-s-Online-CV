@@ -4,6 +4,7 @@
 @import "langages.css";
 @import 'hobbies.css';
 @import 'contact.css';
+@import 'footer.css';
 
 @font-face{
     font-family: "mario";
