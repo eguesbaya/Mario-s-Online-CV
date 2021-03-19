@@ -1,0 +1,76 @@
+.langages{
+    padding: var(--spacing);
+    margin: var(--spacing);
+    background-color: var(--background-light);
+    border-radius: 30px;
+}
+
+.langages > h2{
+    font-family: var(--font-titles);
+    font-size: var(--fontSize-title-others);
+    letter-spacing: var(--spacing-letters-titles);
+    color: var(--font-medium);
+    text-decoration: underline;
+    margin-bottom: calc(var(--spacing) * 2);
+    margin-left: var(--spacing);
+}
+
+.flagsCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: var(--font-others);
+}
+
+.flagsCards .card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0.2px 0.2px 2px black;
+    border-radius: 5px;
+    padding: var(--spacing);
+    background-color: white;
+    margin: var(--spacing);
+}
+
+.card .flag{
+    display: flex;
+    margin-bottom: var(--spacing);  
+    flex-direction: column;
+    position: relative;
+}
+
+.flag .flag-img{
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+}
+
+.flag > .mario-head-flag{
+    transform: scaleX(-1);
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    bottom: calc(var(--spacing) * 2.5);
+    left: var(--spacing);
+}
+
+.flagsCards > .card:hover{
+    transform: rotate(10deg);
+}
+
+.card:hover .mario-head-flag{
+    animation: moveMarioHead 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveMarioHead{
+    0%{
+        left: 0%;
+    }
+
+    100%{
+        left: 65%;
+    }
+}
+
