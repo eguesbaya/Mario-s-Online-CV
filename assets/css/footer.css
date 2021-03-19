@@ -47,10 +47,14 @@ footer h2{
     border-radius: 20px;
 }
 
+.footLinkWork{
+    display: flex;
+    flex-direction: column;
+}
+
 .footLinkWork img,.footAscend img {
-    height: 80px;
-    width: 80px;
-    margin: 24px;
+    height: 40px;
+    width: 40px;
 }
 
 .block-relative{
