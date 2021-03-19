@@ -2,14 +2,95 @@ footer {
     background-color: var(--background-red);
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-    text-align: center;
+}
+
+footer h2{
+    color: var(--font-light);
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-end{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .body-form{
+    display: flex;
+    flex-direction: column;
+    margin-left: calc(var(--spacing)*6);
+    min-width: 300px;
+}
+
+.contact .body-form > textarea{
+    min-width: 300px;
+    min-height: 100px;
+}
+
+.contact .body-form input,  .body-form textarea{
+    margin-bottom: var(--spacing);
+    padding: calc(var(--spacing) + 2px);
+    background-color: var(--background-light);
+    border-radius: 20px;
 }
 
 .footLinkWork img,.footAscend img {
     height: 80px;
     width: 80px;
     margin: 24px;
+}
+
+.block-relative{
+    position: relative;
+}
+
+.block-absolute{
+    transform: scaleX(-1);
+    position: absolute;
+    bottom: 0;
+    right: 1%;
+}
+
+@media screen and (max-width: 660px){
+    .contact .form-all{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contact .form-all a{
+        display: none;
+    }
+
+    .contact{
+        text-align: center;
+    }
+
+    .contact h1{
+        margin-bottom: var(--spacing);
+    }
+
+    .contact .body-form{
+        margin-left: 0;
+        min-width: 0;
+    }
+
+    .contact .body-form > textarea{
+        min-width: 0px;
+        min-height: 0px;
+    }
+
 }

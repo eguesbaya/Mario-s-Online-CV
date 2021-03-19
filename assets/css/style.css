@@ -65,6 +65,9 @@ h1{
 }
 
 h2{
+    font-family: var(--font-titles);
+    font-size: var(--fontSize-title-others);
+    letter-spacing: var(--spacing);
     text-transform: uppercase;
     color: var(--font-medium);
     padding: calc(var(--spacing) * 3);
