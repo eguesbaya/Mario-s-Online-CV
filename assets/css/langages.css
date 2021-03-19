@@ -11,7 +11,7 @@
     letter-spacing: var(--spacing-letters-titles);
     color: var(--font-medium);
     text-decoration: underline;
-    margin-bottom: calc(var(--spacing)*2);
+    margin-bottom: calc(var(--spacing) * 2);
     margin-left: var(--spacing);
 }
 
