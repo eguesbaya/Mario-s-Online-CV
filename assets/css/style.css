@@ -35,7 +35,7 @@
     --font-titles: "mario";
     --font-others: 'Roboto Condensed';
     --fontSize-title: 8em;
-    --fontSize-title-others: calc(var(--fontSize-title) - 6em);
+    --fontSize-title-others: 1.8em;
     
     --spacing-letters-titles: 0.3em;
     /*--fontSize-title: 6em;
@@ -53,7 +53,7 @@
 }
 
 body{
-    padding: 0 var(--spacing);
+    padding: 0 calc(var(--spacing)*16);
     background-color: var(--background-light);
 }
 
@@ -62,5 +62,27 @@ h1{
     font-size: calc(var(--fontSize-title) - 2em);
     color: var( --font-light);
     letter-spacing:var(--spacing-letters-titles);
+}
+
+h2{
+    text-transform: uppercase;
+    color: var(--font-medium);
+    padding: calc(var(--spacing) * 3);
+    margin-left: 70px;
+    margin-top: calc(var(--spacing) * 3);
+}
+
+h3{
+    font-family: var(--font-titles);
+    color: var(--font-medium);
+    text-transform: uppercase;
+}
+
+figcaption, p {
+    color: var(--font-medium);
+}
+
+p{
+    font-size: 1.17em;
 }
 

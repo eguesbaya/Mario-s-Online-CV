@@ -15,7 +15,7 @@
 .navHeader > a{
     text-decoration:none; 
     border: var(--borderSolid);  
-    color: var( --font-medium);
+    color: var( --font-light);
     font-family: var(--font-titles) ;
     font-size:1.3em;
     padding: 10px;
@@ -26,7 +26,6 @@
     text-decoration:none;   
     color: var( --font-medium);
     font-family: var(--font-titles) ;
-    font-size:2em;
     background-color: var(--background-light);
 }
 
@@ -161,7 +160,7 @@
         text-decoration:none;   
         color: var( --font-medium);
         font-family: var(--font-titles) ;
-        font-size:2em;
+        font-size: 2em;
         background-color: var(--background-light);
     }
     

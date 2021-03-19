@@ -1,13 +1,13 @@
 /*Section 5:Hobbies (Nicolas)*/
 .hobbies {
-  background-color: var(--background-yellow);
   font-family: "Roboto Condensed";
 }
 
 .hobbies h2 {
   color: var(--font-medium);
   font-family: "mario";
-  font-size: 4.8em;
+  font-size: var(--fontSize-title-others);
+  letter-spacing: var(--spacing-letters-titles);
 }
 
 .hobbies p {
@@ -15,7 +15,6 @@
   color: var(--font-medium);
   font-family: "Roboto Condensed";
   flex-wrap: wrap;
-  font-size: 1.3em;
 }
 
 .hobbies .pixContainer {
@@ -27,7 +26,7 @@
 }
 
 .hobbies .card-hobbies {
-  background-color: var(--background-light);
+  background-color: var(--background-yellow);
   height: 270px;
   width: 310px;
   border-radius: 30px;
