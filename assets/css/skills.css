@@ -88,11 +88,12 @@
     }
 }
 
+
 @media screen and (max-width: 490px) and (min-width: 100px)
 {
     .skills
     {
-        height: 900px;
+        height: 1000px;
     }
 
     .mariodab
