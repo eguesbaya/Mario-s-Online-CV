@@ -33,13 +33,13 @@
     display: none;
 }
 
-/*--------------------------------    section Experience    ------------------------------*/
-.boxTextPresentation > p{
+/*--------------------------------    section Présentation    ------------------------------*/
+/*.boxTextPresentation > p{
     font-family: var(--font-others) ;
     font-size: 2em;
     color: var( --font-medium);
     font-weight: bold;
-}
+}*/
 
 .presentation{
     background-color: var(--background-red); 
@@ -51,7 +51,7 @@
     align-items:flex-end;
 }
 
-.boxTextPresentation{
+/*.boxTextPresentation{
     border: var(--borderSolid);
     border-color: var( --font-medium) ;
     background-color: var(--background-light);
@@ -59,7 +59,7 @@
     padding: calc(var(--spacing)*7);
     text-align: left;
     margin: 0 0 40px 0;    
-}
+}*/
 
 .BoxImgMarioHalf{
     display:flex;
@@ -109,9 +109,9 @@
         align-items: center;
     }
         
-    .boxTextPresentation{
+    /*.boxTextPresentation{
         width: 90%;
-    }
+    }*/
     
     .BoxImgMarioHalf{
         width: 100%;
@@ -124,7 +124,7 @@
 }
 
 
-@media screen and (max-width: 640px){
+@media screen and (min-width: 360px) and (max-width: 640px){
 
     .BoxImgMarioHalf h1{
         font-size: calc(var(--fontSize-title) - 4em);
@@ -156,13 +156,6 @@
         border-radius: 10px;
     }
     
-    .navHeader a:hover{
-        text-decoration:none;   
-        color: var( --font-medium);
-        font-family: var(--font-titles) ;
-        font-size: 2em;
-        background-color: var(--background-light);
-    }
     
 /*------------------------------------------------------*/
     .presentation{
