@@ -5,6 +5,13 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
+
+    --cube-spacing: 52px;
+    --cube-bottom: 60%;
+    --cube-starting: 65%;
+    --cube-z-index: 0;
+    --logo-sapcing: 52px;
+    --logo-starting: calc((var(--cube-starting) + 10.5px) + var(--logo-sapcing));
 }
 
 footer h2{
@@ -20,7 +27,6 @@ footer h2{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 .footer-end{
@@ -47,14 +53,8 @@ footer h2{
     border-radius: 20px;
 }
 
-.footLinkWork{
-    display: flex;
-    flex-direction: column;
-}
-
-.footLinkWork img,.footAscend img {
-    height: 40px;
-    width: 40px;
+.return{
+    transform: scaleX(-1);
 }
 
 .block-relative{
@@ -62,11 +62,119 @@ footer h2{
 }
 
 .block-absolute{
-    transform: scaleX(-1);
     position: absolute;
     bottom: 0;
-    right: 1%;
 }
+
+/* animation footer */
+.decor{
+    width: 100%;
+    height: 33vh;
+}
+
+.cube{
+    width: 60px;
+    height: 60px;
+    z-index: 10;
+}
+
+.c1{
+    left: var(--cube-starting);
+    bottom: var(--cube-bottom);
+}
+
+.c2{
+    left: calc(var(--cube-starting) + var(--cube-spacing));
+    bottom: var(--cube-bottom);
+}
+
+.c3{
+    left: calc(var(--cube-starting) + (var(--cube-spacing)*2));
+    bottom: var(--cube-bottom);
+}
+
+.c4{
+    left: calc(var(--cube-starting) + (var(--cube-spacing)*3));
+    bottom: var(--cube-bottom);
+}
+
+.c5{
+    left: calc(var(--cube-starting) + (var(--cube-spacing)*4));
+    bottom: var(--cube-bottom);
+}
+
+.c6{
+    left: calc(var(--cube-starting) + (var(--cube-spacing)*5));
+    bottom: var(--cube-bottom);
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+}
+
+.l1{
+    left: var(--logo-starting);
+    bottom: calc(var(--cube-bottom) + 20%);
+}
+
+.l2{
+    left: calc(var(--logo-starting) + var(--logo-sapcing));
+    bottom: calc(var(--cube-bottom) + 20%);
+}
+
+.l3{
+    left: calc(var(--logo-starting) + var(--logo-sapcing) *2 );
+    bottom: calc(var(--cube-bottom) + 20%);
+}
+
+.l4{
+    left: calc(var(--logo-starting) + var(--logo-sapcing) *3 );
+    bottom: calc(var(--cube-bottom) + 20%);
+}
+
+.tuyau{
+    width: 80px;
+}
+
+.t1{
+    bottom: 0;
+    left: 10%;
+}
+
+.t2{
+    transform: scaleY(-1);
+    top:-32.2%;
+    left: calc(var(--cube-starting) + (var(--cube-spacing)*2.2));
+}
+
+.contact-form{
+    top: -20%;
+    position: absolute;
+    z-index: 100;
+}
+
+
+.obus{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 4vw;
+    left: -30vmin;
+    animation: leftToRight 8s infinite;
+    z-index: 90;
+}
+
+@keyframes leftToRight{
+
+    100%{
+        left: 95vw;
+        display: none; 
+    }
+}
+
+
 
 @media screen and (max-width: 660px){
     .contact .form-all{
