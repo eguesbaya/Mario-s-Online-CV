@@ -62,13 +62,9 @@ h1{
     font-size: calc(var(--fontSize-title) - 2em);
     color: var( --font-light);
     letter-spacing:var(--spacing-letters-titles);
-    margin-top: 60px; /*Multiplier la variable "spacing" ne fonctionnait pas*/
 }
 
 h2{
-    font-family: var(--font-titles);
-    font-size: var(--fontSize-title-others);
-    letter-spacing: var(--spacing);
     text-transform: uppercase;
     color: var(--font-medium);
     padding: calc(var(--spacing) * 3);
@@ -90,6 +86,9 @@ p{
     font-size: 1.17em;
 }
 
+/*section{
+    margin-bottom: 100px;
+}*/
 
 @media screen and (max-width: 360px){
     h2{
