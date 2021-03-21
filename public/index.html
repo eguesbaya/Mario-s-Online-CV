@@ -9,30 +9,42 @@
   </head>
   <body>
     <header>
-        <nav class = "navHeader" id="navHeader">
+        <!-----------Mobile version---------------->
+        <nav class="mobile-nav">
+            <a href = "#mobile-menu">
+                <img class="burger-menu-icon" src="images/icon_questionblock.png" alt="question block">
+            </a>
+
+          <div class="mobile-menu" id="mobile-menu">
+                    <a href=""><img class="burger-menu-icon" src="images/icon_questionblock.png" alt="question block"></a>
+                    <a class="list" href = "#presentation">PRESENTATION</a>
+                    <a class="list" href = "#experience">EXPERIENCES</a>
+                    <a class="list" href = "#skills">COMPETENCES</a>
+                    <a class="list" href = "#langages">LANGUES</a>
+                    <a class="list" href = "#hobbies">PASSE-TEMPS</a>
+                    <a class="list" href = "#contact">CONTACT</a> 
+          </div>
+        </nav>
+
+
+
+        <!--Tablet and desktop versions: full display-->
+        <div class="full-screen-menu">
             <a href = "#presentation">PRESENTATION</a>
             <a href = "#experience">EXPERIENCES</a>
             <a href = "#skills">COMPETENCES</a>
-            <a href = "#langages">LANGUAGES</a>
+            <a href = "#langages">LANGUES</a>
             <a href = "#hobbies">PASSE-TEMPS</a>
-            <a href = "#contact">CONTACT</a> 
-        </nav>
-    </header>
-    <main>
+            <a href = "#contact">CONTACT</a>
+        </div>
 
+    <main>
         <section class = "presentation" id="presentation">
-            <div class = "boxTextPresentation">
-                <p>NOM : MARIO BROSS</p><br>
-                <p>TEL : +81676866666</p><br>
-                <p>AGE : 40ANS</p><br>
-                <p>EMAIL : MARIOBROSS@NINTENDO.COM </p><br>
-                <p>PERMIS : A, B(E), C(E), D(E) </p><br>
-            </div>   
-            <div class = "BoxImgMarioHalf">
-                <h1>mario bross</h1>
+                <h1>mario bros</h1>
                 <img class = "ImgMarioHalf" src= "images/mario_cache.png" alt="Mario_demi_tete">
-            </div>
         </section>
+
+    </header>
 
         <section class="experience" id="experience">
             <div class="intro-container">

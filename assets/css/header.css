@@ -1,9 +1,10 @@
 .header{
-    width: 100%;
-    height: 100px;
+    width: 100vw;
+    height: 100vw;
+    background-color: var(--background-red);
 }
 
-.navHeader{
+.full-screen-menu, .navBurger{
     display: flex;
     justify-content:space-around;
     background-color: var(--background-red);
@@ -12,7 +13,7 @@
     height: 100px;
 }
 
-.navHeader > a{
+.full-screen-menu a{
     text-decoration:none; 
     border: var(--borderSolid);  
     color: var( --font-light);
@@ -22,65 +23,42 @@
     border-radius: 10px;
 }
 
-.navHeader > a:hover{
+.full-screen-menu a:hover{
     text-decoration:none;   
     color: var( --font-medium);
     font-family: var(--font-titles) ;
     background-color: var(--background-light);
 }
 
-.ImgBurger{
+.mobile-nav{
     display: none;
 }
 
-/*--------------------------------    section Experience    ------------------------------*/
-.boxTextPresentation > p{
-    font-family: var(--font-others) ;
-    font-size: 2em;
-    color: var( --font-medium);
-    font-weight: bold;
-}
-
+/*--------------------------------  Présentation    ------------------------------*/
 .presentation{
-    background-color: var(--background-red); 
+    background-color: var(--background-red);
     border-radius: 0  0 30px 30px ;
+    width: 100%;
     text-align: center;
     display:flex;
-    padding: 0 0 0 40px;
-    justify-content: space-around;
-    align-items:flex-end;
-}
-
-.boxTextPresentation{
-    border: var(--borderSolid);
-    border-color: var( --font-medium) ;
-    background-color: var(--background-light);
-    border-radius: 30px;
-    padding: calc(var(--spacing)*7);
-    text-align: left;
-    margin: 0 0 40px 0;    
-}
-
-.BoxImgMarioHalf{
-    display:flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items:center;
     flex-direction: column;
-    margin-left: var(--spacing);
 }
 
 .ImgMarioHalf{
-    width: 400px;
+    min-width: 400px;
+    max-width: 30%;
     bottom: 0;
     margin: auto;
 }
 
+
+
+/* Tablet & large screen version*/
 @media screen and (max-width: 1230px) and (min-width: 640px){
-    .header{
-        width: 100%;
-        background-color: var(--background-red);
-    }
-    .navHeader{
+
+    .full-screen-menu{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -88,7 +66,7 @@
         height: auto;
     }
 
-    .navHeader a{
+    .full-screen-menu a{
         text-decoration:none; 
         text-align: center;
         width: 80%;
@@ -96,98 +74,64 @@
         padding: 16px;
         border-radius: 10px;
     }
-    
 
-/*------------------------------------------------------*/
-    
-    .presentation{
-        padding: 40px;
-        display: flex;
-        flex-direction:column-reverse;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-    }
-        
-    .boxTextPresentation{
-        width: 90%;
-    }
-    
-    .BoxImgMarioHalf{
-        width: 100%;
-    }
-    
-    
-    .ImgMarioHalf{
-        width: 100%;
-    }
 }
+    
 
+/*Mobile version*/
+@media screen and (min-width: 360px) and (max-width: 640px){
 
-@media screen and (max-width: 640px){
-
-    .BoxImgMarioHalf h1{
+    .presentation h1{
         font-size: calc(var(--fontSize-title) - 4em);
         color: var( --font-light);
     }
 
-    .header{
-        width: 100%;
-        background-color: var(--background-red);
-    }
-
-    .navHeader{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        background-color: var(--background-red);
-        align-items: center;
-        width: 100%;
-        height: auto;
-    }
-
-    .navHeader a{
-        text-decoration:none; 
-        border: var(--borderSolid); 
-        text-align: center;
-        width: 80%;
-        margin: 10px;
-        padding: 16px;
-        border-radius: 10px;
-    }
-    
-    .navHeader a:hover{
-        text-decoration:none;   
-        color: var( --font-medium);
-        font-family: var(--font-titles) ;
-        font-size: 2em;
-        background-color: var(--background-light);
-    }
-    
-/*------------------------------------------------------*/
-    .presentation{
-        padding-top: 40px;
-        display: flex;
-        flex-direction:column-reverse;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .boxTextPresentation{
+   .full-screen-menu{
         display:none;
     }
 
-    .boxTextPresentation{
-        width: 90%;
+    .mobile-nav{
+        display:block;
+        text-align: center;
+        background-color: var(--background-red);
+        padding: var(--spacing); /*multiply by 3*/
     }
 
-    .BoxImgMarioHalf{
-        width: 100%;
-    }
-    
-    
-    .ImgMarioHalf{
-        width: 100%;
+    #mobile-menu {
+        display:none;
     }
 
+    #mobile-menu:target {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    #mobile-menu:target .list{
+        text-decoration:none;
+        text-align: center;
+        border: var(--borderSolid);  
+        color: var( --font-light);
+        font-family: var(--font-titles) ;
+        font-size:1.3em;
+        padding: 10px;
+        margin: var(--spacing);
+        border-radius: 10px;
+    }
+
+    .burger-menu-icon{
+        max-width: 20%;
+        padding: var(--spacing);
+        animation: beat .50s infinite alternate;
+        transform-origin: center;
+
+    }
+
+    /* Heart beat animation */
+    @keyframes beat{
+	to { transform: scale(1.2); }
+}
+
+ 
 }
