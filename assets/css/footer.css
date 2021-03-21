@@ -175,7 +175,7 @@ footer h2{
 }
 
 .t1-1{
-    top: -55%;
+    top: -54.7%;
     left: 30%;
     z-index: 10;
 }
@@ -188,7 +188,7 @@ footer h2{
 }
 
 .t2{
-    top: -55%;
+    top: -54.7%;
     left: calc(var(--cube-starting) + (var(--cube-spacing)*2.2));
 }
 

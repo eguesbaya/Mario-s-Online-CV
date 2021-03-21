@@ -37,7 +37,6 @@
 /*--------------------------------  Présentation    ------------------------------*/
 .presentation{
     background-color: var(--background-red);
-    border-radius: 0  0 30px 30px ;
     width: 100%;
     text-align: center;
     display:flex;
