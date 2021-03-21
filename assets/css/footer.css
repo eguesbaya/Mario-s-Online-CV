@@ -5,7 +5,6 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-    border-radius: 30px 30px 0 0;
 
     background-image: url("../../public/images/footer/mario-background.jpg");
     background-size: contain;
@@ -16,6 +15,10 @@ footer {
     --cube-z-index: 0;
     --logo-sapcing: 52px;
     --logo-starting: calc((var(--cube-starting) + 10.5px) + var(--logo-sapcing));
+}
+
+body{
+    overflow-x: hidden;
 }
 
 footer h2{
@@ -129,6 +132,7 @@ footer h2{
     width: 40px;
     height: 40px;
     z-index: 10;
+    animation: pieceRotate 5s infinite;
 }
 
 .logo:hover{
@@ -220,7 +224,7 @@ footer h2{
 
 @keyframes leftToRight{
     100%{
-        left: 95vw;
+        left: 100vw;
         display: none; 
     }
 }
