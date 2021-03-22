@@ -197,8 +197,10 @@ footer h2{
 .btn-header{
     position: absolute;
     width: 50px;
-    top: 0;
-    left: calc(var(--cube-starting) + (var(--cube-spacing) * 2.52));
+    top: 20%;
+    left: calc(var(--cube-starting) + (var(--cube-spacing)* 2.5));
+    z-index: 10;
+    animation: hearth .50s infinite alternate;
 }
 
 .obus{
@@ -220,7 +222,7 @@ footer h2{
 
 @keyframes leftToRight{
     100%{
-        left: 100vw;
+        left: 100%;
         display: none; 
     }
 }
@@ -246,6 +248,11 @@ footer h2{
     }
 }
 
+@keyframes hearth{
+	100% { 
+        transform: scale(1.2); 
+    }
+}
 
 @media screen and (max-width: 660px){
     .contact .form-all{
@@ -256,10 +263,6 @@ footer h2{
 
     .contact .form-all a{
         display: none;
-    }
-
-    .contact{
-        text-align: center;
     }
 
     .contact h1{
