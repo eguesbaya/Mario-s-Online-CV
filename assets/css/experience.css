@@ -1,3 +1,13 @@
+:root{
+    --imgHeight: 130px;
+    --spacing16px: 16px;
+    --borderRadius: 8px;
+    --CardsbarckgroundImage: 'url("../../public/images/experience/caisse_sans_?.png")';
+}
+
+
+
+
 .experience{
     background-color: var(--background-light);
     padding: var(--spacing);
@@ -7,6 +17,8 @@
     font-family:var(--font-others);
     width: 100%;
     color: var(--font-medium);
+    padding: var( --spacing16px) ;
+
 }
 
 .experience h2 {
@@ -20,6 +32,7 @@
     font-family: var(--font-titles);
     color: var(--font-medium);
     letter-spacing: var(--spacing-letters-titles);
+    padding: var( --spacing16px);
 }
 
 .experience .intro-container{
@@ -33,6 +46,8 @@
 .experience .intro-paragraph {
     width: 40%;
 }
+/**********************************************/
+
 
 .experience .card-container{
     width: 100%;
@@ -43,23 +58,32 @@
 }
 
 .experience .card {
-    background-color: var(--background-yellow);
+    /*background-color: var(--background-yellow);*/
+    background-image: url("../../public/images/experience/caisse_sans_?.png");
     width: 30%;
-    border-radius: 30px;
+    border-radius: var(--borderRadius);
     padding: 16px;
     margin: 8px;
     display:flex;
     flex-direction: column;
+    justify-content: center;
+
+    
 }
 
 .experience .card-content{
-    flex:1;
+    
     text-align: center;
 }
 
 .experience img{
-    width: 125px;
-    height: 125px;
+    
+    
+        margin: var(--spacing16px);
+        height: var(--imgHeight);
+        object-fit: contain;
+      
+
 }
 
 
