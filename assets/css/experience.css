@@ -2,7 +2,7 @@
     --imgHeight: 130px;
     --spacing16px: 16px;
     --borderRadius: 8px;
-    --CardsbarckgroundImage: 'url("../../public/images/experience/caisse_sans_?.png")';
+    --CardsbarckgroundImage: url("../../public/images/experience/caisse_vide.png");
 }
 
 
@@ -59,7 +59,8 @@
 
 .experience .card {
     /*background-color: var(--background-yellow);*/
-    background-image: url("../../public/images/experience/caisse_sans_?.png");
+    background-image: var(--CardsbarckgroundImage);
+    background-size: contain;
     width: 30%;
     border-radius: var(--borderRadius);
     padding: 16px;
