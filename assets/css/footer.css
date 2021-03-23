@@ -34,7 +34,7 @@ footer h2{
 }
 
 .contact-form{
-    top: 10%;
+    top: 5%;
     position: absolute;
     left: 15%;
     z-index: 100;
@@ -152,7 +152,7 @@ footer h2{
 .koopa{
     height: 80px;
     bottom: 9.5%;
-    left: 35%
+    left: 45%
 }
 
 .tuyau{
@@ -178,31 +178,53 @@ footer h2{
     animation: carnivore 1.5s alternate-reverse infinite;
 }
 
-.btn-header{
-    position: absolute;
-    width: 50px;
-    top: 20%;
-    left: calc(var(--cube-starting) + (var(--cube-spacing)* 2.5));
-    z-index: 10;
-    animation: heart 0.5s infinite alternate;
-}
-
 .obus{
     width: 80px;
     height: 80px;
     position: absolute;
     bottom: 25%;
     left: -30vmin;
-    animation: leftToRight 8s infinite;
+    animation: leftToRight 10s infinite;
     z-index: 90;
 }
 
 .mario-stage-end{
     height: 90%;
-    right: 1%;
+    right: 10%;
     bottom: 8%;
     z-index: 100;
 }
+
+.btn-header{
+    position: absolute;
+    width: 80px;
+    bottom: 40%;
+    right: 5%;
+    z-index: 10;
+    animation: heart 0.5s infinite alternate;
+}
+
+.label-end{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    bottom: 59%;
+    font-family: var(--font-titles);
+    font-size: 0.8em;
+    letter-spacing: var(-spacing);
+    text-transform: uppercase;
+    color: var(--font-light);
+    right: 2.5%;
+    z-index: 10;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.return-up:hover .label-end{
+    opacity: 1;
+    visibility: visible;
+}
+
+
 
 @keyframes leftToRight{
     100%{
