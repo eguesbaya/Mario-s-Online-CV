@@ -11,7 +11,7 @@ footer {
 
     --cube-spacing: 52px;
     --cube-bottom: 40%;
-    --cube-starting: 65%;
+    --cube-starting: 44%;
     --cube-z-index: 0;
     --logo-sapcing: 52px;
     --logo-starting: calc((var(--cube-starting) + 10.5px) + var(--logo-sapcing));
@@ -33,20 +33,20 @@ footer h2{
     justify-content: space-around;
 }
 
-.footer-end{
-    display: flex;
-    flex-direction: column;
+.contact-form{
+    top: 10%;
+    position: absolute;
+    left: 15%;
+    z-index: 100;
 }
 
 .contact .body-form{
     display: flex;
     flex-direction: column;
-    margin-left: calc(var(--spacing)*6);
-    min-width: 400px;
 }
 
 .contact .body-form > textarea{
-    min-width: 400px;
+    min-width: 350px;
     min-height: 100px;
 }
 
@@ -76,12 +76,6 @@ footer h2{
 
 /* animation footer */
 
-.piece{
-    top: 40%;
-    left: 10.6%;
-    width: 60px;
-    animation: pieceRotate 2s infinite;
-}
 
 .decor{
     width: 100%;
@@ -128,7 +122,7 @@ footer h2{
     width: 40px;
     height: 40px;
     z-index: 10;
-    animation: pieceRotate 5s infinite;
+    animation: Rotate 5s infinite;
 }
 
 .logo:hover{
@@ -166,32 +160,22 @@ footer h2{
 }
 
 .t1{
-    bottom: 0;
-    left: 10%;
+    transform: rotate(90deg);
+    bottom: 10%;
+    left: 0;
 }
 
 .t1-1{
     top: 0;
-    left: 30%;
+    left: 50%;
     z-index: 10;
 }
 
 .t1-2{
-    left: 30.5%;
+    left: 50.5%;
     top: 16%;
     width: 60px;
     animation: carnivore 1.5s alternate-reverse infinite;
-}
-
-.t2{
-    top: 0%;
-    left: calc(var(--cube-starting) + (var(--cube-spacing)*2.2));
-}
-
-.contact-form{
-    top: 3%;
-    position: absolute;
-    z-index: 100;
 }
 
 .btn-header{
@@ -222,7 +206,7 @@ footer h2{
 
 @keyframes leftToRight{
     100%{
-        left: 100%;
+        left: 150%;
         display: none; 
     }
 }
@@ -242,7 +226,7 @@ footer h2{
     }
 }
 
-@keyframes pieceRotate{
+@keyframes Rotate{
     100%{
         transform: rotateY(360deg);
     }
