@@ -192,10 +192,9 @@ footer h2{
 }
 
 .mario-stage-end{
-    height: 25%;
+    height: 70%;
     right: 10%;
     bottom: 9%;
-    z-index: 100;
 }
 
 .btn-header{
@@ -231,6 +230,12 @@ footer h2{
     100%{
         left: 150%;
         display: none; 
+    }
+}
+
+@keyframes mario-finish{
+    100%{
+        bottom: 0;
     }
 }
 
@@ -276,7 +281,17 @@ footer h2{
     }
 
     .mario-stage-end{
+        position: absolute;
         right: 15%;
+    }
+
+    .mario-pole{
+        z-index: 90;
+    }
+    
+    .mario-end{
+        bottom: -11%;
+        animation: mario-finish 5s;
     }
 
     .btn-header{
@@ -344,7 +359,7 @@ footer h2{
         display: block;
         position: absolute;
         top: 6%;
-        width: 14%;
+        width: 14%;    bottom: 9%;
     }
 
     .label-end{
