@@ -181,6 +181,7 @@ footer h2{
 }
 
 .obus{
+    display: none;
     width: 80px;
     height: 80px;
     position: absolute;
@@ -191,9 +192,9 @@ footer h2{
 }
 
 .mario-stage-end{
-    height: 90%;
+    height: 25%;
     right: 10%;
-    bottom: 8%;
+    bottom: 9%;
     z-index: 100;
 }
 
@@ -262,13 +263,35 @@ footer h2{
 
 @media screen and (max-width: 2000px){
 
-    .objet{
-        display: none;
-    }
     
     footer {
         height: 75vh;
         width: 100%;
+
+        --cube-starting: 42%;
+    }
+
+    .t1-2{
+        left: 50.8%;
+    }
+
+    .mario-stage-end{
+        right: 15%;
+    }
+
+    .btn-header{
+        position: absolute;
+        bottom: 65%;
+        right: 4%;
+    }
+
+    .label-end{
+        bottom: 85%;
+        right: 1.5%;
+    }
+
+    .contact-form{
+        left: 22%;
     }
 
 }
