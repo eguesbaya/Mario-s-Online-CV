@@ -159,6 +159,7 @@ footer h2{
     transform: rotate(90deg);
     bottom: 10%;
     left: 0;
+    z-index: 1;
 }
 
 .t1-1{
@@ -172,17 +173,6 @@ footer h2{
     top: 16%;
     width: 60px;
     animation: carnivore 1.5s alternate-reverse infinite;
-}
-
-.obus{
-    display: none;
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    bottom: 25%;
-    left: -30vmin;
-    animation: leftToRight 10s infinite;
-    z-index: 90;
 }
 
 .mario-stage-end{
@@ -226,16 +216,49 @@ footer h2{
     opacity: 0.6;
 }
 
-@keyframes arrowUpAndDown{
+.carapace{
+    visibility: hidden;
+    width: 3%;
+    transform: scaleX(-1);
+    bottom: 10%;
+    left: 0;
+    z-index: 0;
+}
+
+.carapace-move{
+    animation: carapaceMove 3s ease-in-out;
+}
+
+@keyframes carapaceMove{
+    0%{
+        visibility: visible;
+        left: 0;
+        bottom: 12%;
+    }
+
+    18%{
+        bottom: 10%;
+    }
+
+    50%{
+        left: 71%
+    }
+
+    77%{ 
+        bottom: 10%;
+    }
+    78%{
+        bottom: 12%;
+    }
+
     100%{
-        bottom: 30%;
+        left: -50%;
     }
 }
 
-@keyframes leftToRight{
+@keyframes arrowUpAndDown{
     100%{
-        left: 150%;
-        display: none; 
+        bottom: 30%;
     }
 }
 
@@ -331,6 +354,10 @@ footer h2{
         bottom: 9%;
         animation: arrowUpAndDown 1s infinite;
         opacity: 0.6;
+    }
+
+    .carapace{
+        width: 4%;
     }
 
     @keyframes arrowUpAndDown{
