@@ -1,10 +1,10 @@
-.contact{
+/*.contact{
     padding: var(--spacing);
     background-color: var(--background-red);
     border-radius: 30px 30px 0 0;
 }
 
-.contact > h2{
+footer h2{
     font-family: var(--font-titles);
     font-size: var(--fontSize-title-others);
     letter-spacing: var(--spacing);
@@ -57,16 +57,7 @@
 }
 
 .contact .contact-form{
-    display: none;
     justify-content: center;
-}
-
-.contact .contact-form:target{
-    display: flex;
-}
-
-.contact .contact-form:target{
-    display: flex;
 }
 
 .contact .body-form{
@@ -99,10 +90,6 @@
         display: none;
     }
 
-    .contact .contact-form{
-        display: flex;
-    }
-
     .contact{
         text-align: center;
     }
@@ -121,4 +108,4 @@
         min-height: 0px;
     }
 
-}
+}*/
