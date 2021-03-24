@@ -97,7 +97,6 @@ header{
     .mobile-nav{
         display:block;
         text-align: center;
-        /*background-color: var(--background-red);*/
         padding: var(--spacing); /*multiply by 3*/
     }
 
@@ -117,6 +116,7 @@ header{
         text-align: center;
         border: var(--borderSolid);  
         color: var( --font-light);
+        background-color: rgba(0,95,185,255);
         font-family: var(--font-titles) ;
         font-size:1.3em;
         padding: 10px;
