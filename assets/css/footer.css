@@ -260,19 +260,6 @@ footer h2{
     }
 }
 
-@media screen and (max-width: 2000px){
-
-    .objet{
-        display: none;
-    }
-    
-    footer {
-        height: 75vh;
-        width: 100%;
-    }
-
-}
-
 @media screen and (max-width: 600px){
 
     .block-absolute, .block-relative{
@@ -291,7 +278,7 @@ footer h2{
 
     footer {
         position: relative;
-        height: 85vh;
+        height: 82vh;
         background-size: cover;
         justify-content: center;
         width: 100%;
@@ -325,11 +312,9 @@ footer h2{
     }
 
     .label-end{
-        position: absolute;
-        opacity: 1;
-        visibility: visible;    
-        right: 4%;
+        display: block;
         top: 4%;
+        right: 4%;
         font-size: 0.6em;
     }
 }
