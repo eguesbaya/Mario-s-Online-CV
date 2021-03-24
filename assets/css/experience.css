@@ -1,8 +1,10 @@
 :root{
-    --imgHeight: 130px;
+    --imgHeight: 150px;
     --spacing16px: 16px;
+    --spacing8px: 8px;
     --borderRadius: 8px;
-    --CardsbarckgroundImage: 'url("../../public/images/experience/caisse_sans_?.png")';
+    --CardsbarckgroundImage: url("../../public/images/experience/caisse_sans.png");
+    --cubeWidthHeight: 355px;
 }
 
 
@@ -18,6 +20,7 @@
     width: 100%;
     color: var(--font-medium);
     padding: var( --spacing16px) ;
+    font-weight: bolder;
 
 }
 
@@ -32,7 +35,8 @@
     font-family: var(--font-titles);
     color: var(--font-medium);
     letter-spacing: var(--spacing-letters-titles);
-    padding: var( --spacing16px);
+    
+   /* padding: var( --spacing8px);*/
 }
 
 .experience .intro-container{
@@ -49,64 +53,73 @@
 /**********************************************/
 
 
-.experience .card-container{
-    width: 100%;
+.card-container{
+    height: 100%;
+
     display:flex;
     justify-content: space-around;
-    align-items: stretch;
+   align-items: stretch;
     flex-wrap: wrap;
 }
 
-.experience .card {
+.card {
     /*background-color: var(--background-yellow);*/
-    background-image: url("../../public/images/experience/caisse_sans_?.png");
-    width: 30%;
-    border-radius: var(--borderRadius);
-    padding: 16px;
-    margin: 8px;
+    background-image: var(--CardsbarckgroundImage);
+    background-size:100%;
+    background-repeat: no-repeat;
+
+   width: var(--cubeWidthHeight);
+   height: var(--cubeWidthHeight);
+
+    
+    margin: 16px;
     display:flex;
     flex-direction: column;
     justify-content: center;
-
     
+    position:relative;
 }
 
-.experience .card-content{
+.imgTitre{
+    text-align: center;  
+
     
-    text-align: center;
 }
 
 .experience img{
-    
-    
-        margin: var(--spacing16px);
-        height: var(--imgHeight);
-        object-fit: contain;
-      
+    margin: var(--spacing16px);
+    height: var(--imgHeight);
+   
+   
+    object-fit: contain;
+ }
+
+.textCard{
+
+display:none;
+text-align: center;
+width: 100%;
+}
+
+.experience .card:hover .imgTitre{
+
+
 
 }
+.experience  .card:hover .textCard{
+    display:inline;
+    
+
+}
+
+.experience .card:hover img{
+   height: 100px;    
+}
+
 
 
 @media screen and (min-width: 200px) and (max-width: 667px) {
-    .experience .card {
-      width: 100%;
-    }
-    .experience .card > p{
-        display:none;
-    }
+   
 
-    .experience .intro-paragraph{
-        display:none;
-    }
-
-    .experience .card > img{
-        min-width:125px;
-    }
-}
-
-@media screen and (min-width: 667px) and (orientation: landscape) {
-    .experience .card{
-        width: 20%;
-    }
 }
 
