@@ -13,9 +13,8 @@
     color: var(--font-medium);
 }
 
-.langages > h3{
-
-   
+.langages  p{
+   font-size: 1.4em;
 
 }
 
@@ -81,4 +80,5 @@
         left: 65%;
     }
 }
+
 
