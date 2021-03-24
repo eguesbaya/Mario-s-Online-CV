@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,33 +8,46 @@
     <title>Mario's Online CV</title>
   </head>
   <body>
-    <header>
-        <nav class = "navHeader" id="navHeader">
+    <header id="navHeader">
+
+        <nav class="mobile-nav">
+            <a href = "#mobile-menu">
+                <img class="burger-menu-icon" src="images/icon_questionblock.png" alt="question block">
+            </a>
+
+          <div class="mobile-menu" id="mobile-menu">
+                <a href=""><img class="burger-menu-icon" src="images/icon_questionblock.png" alt="question block"></a>
+                <a class="list" href = "#presentation">PRESENTATION</a>
+                <a class="list" href = "#experience">EXPERIENCES</a>
+                <a class="list" href = "#skills">COMPETENCES</a>
+                <a class="list" href = "#langages">LANGUES</a>
+                <a class="list" href = "#hobbies">PASSE-TEMPS</a>
+                <a class="list" href = "#contact">CONTACT</a> 
+          </div>
+        </nav>
+
+
+
+        <!--Tablet and desktop versions: full display-->
+        <div class="full-screen-menu">
             <a href = "#presentation">PRESENTATION</a>
             <a href = "#experience">EXPERIENCES</a>
             <a href = "#skills">COMPETENCES</a>
-            <a href = "#langages">LANGUAGES</a>
+            <a href = "#langages">LANGUES</a>
             <a href = "#hobbies">PASSE-TEMPS</a>
-            <a href = "#contact">CONTACT</a> 
-        </nav>
-    </header>
-    <main>
+            <a href = "#contact">CONTACT</a>
+        </div>
 
+    
         <section class = "presentation" id="presentation">
-            <div class = "boxTextPresentation">
-                <p>NOM : MARIO BROSS</p><br>
-                <p>TEL : +81676866666</p><br>
-                <p>AGE : 40ANS</p><br>
-                <p>EMAIL : MARIOBROSS@NINTENDO.COM </p><br>
-                <p>PERMIS : A, B(E), C(E), D(E) </p><br>
-            </div>   
-            <div class = "BoxImgMarioHalf">
-                <h1>mario bross</h1>
+                <h1>mario bros</h1>
                 <img class = "ImgMarioHalf" src= "images/mario_cache.png" alt="Mario_demi_tete">
-            </div>
         </section>
+    </header>
 
-        <section class="experience" id="experience">
+    <main>
+       
+<section class="experience" id="experience">
             <div class="intro-container">
                 <!--<h4>My expertise</h4>-->
                 <!--<h2>work experience</h2>-->
@@ -303,52 +316,67 @@
         </div>
       </section>
 
-        <section class="contact" id="contact">
+    </main>
+    <footer>
+        <div class="decor block-relative">
             <h2>Contact </h2>
-            <div class="form-all">
-                <a href="#contact-form">
-                    <div class="head-abutton">
-                        <div class="block-button-head">
-                            <img class="contact-head" src="images/headMarioContact.png" alt="head mario">
-                            <div class="bubble-text">
-                                Click on me !!!
-                            </div>
-                        </div>
-                    </div>
+            <img class="objet obus block-absolute return" src="images/footer/bombe.png" alt="obus">
+            
+            <img class="objet block-absolute tuyau t1" src="images/footer/tuyau-green.png" alt="tuyau">
+
+            <img class="objet block-absolute return koopa" src="images/footer/koopa.png" alt="Koopa">
+            
+            <img class="objet block-absolute tuyau t1-1 inverse" src="images/footer/tuyau-green.png" alt="tuyau">
+            
+            <img class="objet block-absolute tuyau t1-2 inverse" src="images/footer/carnivore1.png" alt="tuyau">
+            
+            <img class="objet block-absolute cube c1" src="images/footer/brique.png" alt="cube">
+            
+            <img class="objet block-absolute cube c2" src="images/footer/brique.png" alt="cube">
+            
+            <img class="objet block-absolute cube c3" src="images/footer/brique.png" alt="cube">
+            
+            <img class="objet block-absolute cube c4" src="images/footer/brique.png" alt="cube">
+            
+            <img class="objet block-absolute cube c5" src="images/footer/brique.png" alt="cube">
+            
+            <img class="objet block-absolute cube c6" src="images/footer/brique.png" alt="cube">
+           
+            <div class="links">
+                <a href="https://www.linkedin.com/company/nintendo/" target="_blank" title= "Linkedin">
+                    <img class="objet logo block-absolute l1" src="images/footer/linkedin.png" alt="votre communauté professionnelle"/>
                 </a>
-                <form class="contact-form" id="contact-form"  action="#" method="POST" >
+                <a href="https://github.com/eguesbaya/Mario-s-Online-CV" target="_blank" title="Github">
+                    <img class="objet logo block-absolute l2" src="images/footer/github.png" alt="First project @WildCodeSchool - Mario's online CV"/>
+                </a>
+                <a href="https://twitter.com/supermario_fra?lang=fr" target="_blank" title="Twitter">
+                    <img class="objet logo block-absolute l3" src="images/footer/twitter.png" alt="First project @WildCodeSchool - Mario's online CV"/>
+                </a>
+                <a href="https://www.facebook.com/SuperMarioFR" target="_blank" title="Facebook">
+                    <img class="objet logo block-absolute l4" src="images/footer/facebook.png" alt="First project @WildCodeSchool - Mario's online CV"/>
+                </a>
+            </div>
+            <div class="contact" id="contact">
+                <form class="contact-form block-absolute" action="#" method="POST" >
                     <div class="body-form">
-                        <input type="text" name="lastname" id="lastname" placeholder="Nom:" required>
-                        <input type="text" name="firstname" id="firstname" placeholder="Prénom:" required>
-                        <input type="email" name="email" id="email" placeholder="Email:" required>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message: " required></textarea>
+                        <label for="lastname">NOM</label>
+                        <input type="text" name="lastname" id="lastname" placeholder="Bross" required>
+                        <label for="firstname">PRENOM</label>
+                        <input type="text" name="firstname" id="firstname" placeholder="Mario" required>
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" placeholder="Mario.Bross@Nintendo.fr" required>
+                        <label for="message">MESSAGE</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Laissez-moi un message ici !" required></textarea>
                         <input type="submit" value="Envoyer">
                     </div>
                 </form>
-            </div>
-        </section>
-        
-    </main>
-    <footer>
-        <div class = "footLinkWork">
-            <a href="https://www.wildcodeschool.com/fr-FR" target="_blank" title="Lien WildCodeSchool">
-                <img src="images/wildcodeschool.png" alt="Wild Code School Apprenez un métier tech avec passion"/>
+            </div>  
+            <img class="objet block-absolute return mario-stage-end" src="images/footer/mario-stage-end.png" alt="mario-stage-end">
+            <a href="#navHeader" title="Retour au début du site" class="return-up">
+                <p class="label-end">Retour au debut du site</p>
+                <img id="cube-end" class="objet burger-menu-icon btn-header" src="images/icon_questionblock.png" alt="question block">
             </a>
-            <a href="https://fr.linkedin.com/" target="_blank" title= "Lien linkedin">
-                <img src="images/linkedin.png" alt="votre communauté professionnelle"/>
-            </a>
-            <a href="https://github.com/eguesbaya/Mario-s-Online-CV" target="_blank" title="Lien github">
-                <img src="images/github.png" alt="First project @WildCodeSchool - Mario's online CV"/>
-            </a>
-            <a href="https://www.nintendo.fr/" target="_blank" title="Lien Nintendo officiel">
-                <img src="images/nintendo_nes.png" alt="First project @WildCodeSchool - Mario's online CV"/>
-            </a>
-        </div>
-        <div class= "footAscend">
-            <a href="#navHeader" title="Revenir en haut de la page">
-                <img src="images/fleche.png" alt=""/>
-            </a>
-        </div>
+        </div> 
     </footer>
     <script src="../assets/js/index.js"></script>
   </body>
