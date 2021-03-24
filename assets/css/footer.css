@@ -151,12 +151,6 @@ footer h2{
     bottom: var(--logo-bottom);
 }
 
-.koopa{
-    height: 80px;
-    bottom: 9.5%;
-    left: 45%
-}
-
 .tuyau{
     width: 80px;
 }
@@ -192,9 +186,21 @@ footer h2{
 }
 
 .mario-stage-end{
-    height: 70%;
-    right: 10%;
-    bottom: 9%;
+    right: 20%;
+    bottom: 8%;
+}
+
+.mario-pole{
+    height: 80%;
+    z-index: 90;
+}
+
+.mario-end{
+    right: 20.06%;
+    bottom: 20%;
+    height: 24.5%;
+    z-index: 91;
+    animation: mario-finish 3s alternate infinite;
 }
 
 .btn-header{
@@ -206,24 +212,24 @@ footer h2{
     animation: heart 0.5s infinite alternate;
 }
 
-.label-end{
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    bottom: 59%;
-    font-family: var(--font-titles);
-    font-size: 0.8em;
-    letter-spacing: var(-spacing);
-    text-transform: uppercase;
-    color: var(--font-light);
-    right: 2.5%;
-    z-index: 10;
-    transition: visibility 0s, opacity 0.5s linear;
+.door{
+    right: 0;
+    bottom: 9%;
+    width: 8%;
 }
 
-.return-up:hover .label-end{
-    opacity: 1;
-    visibility: visible;
+.arrow{
+    width: 3%;
+    right: 2.6%;
+    bottom: 9%;
+    animation: arrowUpAndDown 1s infinite;
+    opacity: 0.6;
+}
+
+@keyframes arrowUpAndDown{
+    100%{
+        bottom: 30%;
+    }
 }
 
 @keyframes leftToRight{
@@ -235,7 +241,7 @@ footer h2{
 
 @keyframes mario-finish{
     100%{
-        bottom: 52%;
+        bottom: 48%;
     }
 }
 
@@ -266,7 +272,7 @@ footer h2{
     }
 }
 
-@media screen and (max-width: 2000px){
+@media screen and (max-width: 1500px){
 
     
     footer {
@@ -278,22 +284,6 @@ footer h2{
 
     .t1-2{
         left: 50.8%;
-    }
-
-    .mario-stage-end{
-        position: absolute;
-        right: 15%;
-    }
-
-    .mario-pole{
-        z-index: 90;
-    }
-    
-    .mario-end{
-        bottom: 20%;
-        height: 21.5%;
-        z-index: 100;
-        animation: mario-finish 3s alternate infinite;
     }
 
     .btn-header{
@@ -309,6 +299,44 @@ footer h2{
 
     .contact-form{
         left: 22%;
+    }
+
+    .mario-stage-end{
+        right: 16%;
+        bottom: 8%;
+    }
+    
+    .mario-pole{
+        height: 70%;
+        z-index: 90;
+    }
+    
+    .mario-end{
+        right: 15.06%;
+        bottom: 20%;
+        height: 24.5%;
+        z-index: 91;
+        animation: mario-finish 3s alternate infinite;
+    }
+
+    .door{
+        right: 0;
+        bottom: 9%;
+        width: 11%;
+    }
+    
+    .arrow{
+        width: 4%;
+        right: 3.6%;
+        bottom: 9%;
+        animation: arrowUpAndDown 1s infinite;
+        opacity: 0.6;
+    }
+
+    @keyframes arrowUpAndDown{
+        100%{
+            bottom: 20%;
+        }
     }
 
 }
