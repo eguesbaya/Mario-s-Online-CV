@@ -1,15 +1,336 @@
 footer {
-    background-color: var(--background-red);
     width: 100%;
+    height: 50vh;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-around;
-    text-align: center;
+
+    background-image: url("../../public/images/footer/mario-background.jpg");
+    background-size: contain;
+
+    --cube-spacing: 52px;
+    --cube-bottom: 40%;
+    --cube-starting: 44%;
+    --cube-z-index: 0;
+    --logo-sapcing: 52px;
+    --logo-starting: calc((var(--cube-starting) + 10.5px) + var(--logo-sapcing));
+    --logo-bottom: calc(var(--cube-bottom) + 13%);
 }
 
-.footLinkWork img,.footAscend img {
+body{
+    overflow-x: hidden;
+}
+
+footer h2{
+    color: var(--font-light);
+    margin-top: 5%;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact-form{
+    top: 2%;
+    left: 15%;
+    z-index: 100;
+}
+
+.contact .body-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .body-form label{
+    padding-left: 15px;
+    padding-bottom: 5px;
+    font-family: var(--font-titles);
+    font-size: 0.8em;
+    letter-spacing: var(-spacing);
+    text-transform: uppercase;
+    color: var(--font-light);
+}
+
+.contact .body-form input,  .body-form textarea{
+    margin-bottom: var(--spacing);
+    padding: var(--spacing);
+    background-color: var(--background-light);
+    border-radius: 20px;
+}
+
+.return{
+    transform: scaleX(-1);
+}
+
+.inverse{
+    transform: scaleY(-1);
+}
+
+.block-relative{
+    position: relative;
+}
+
+.block-absolute{
+    position: absolute;
+    bottom: 0;
+}
+
+/* animation footer */
+
+
+.decor{
+    width: 100%;
+    height: 100%;
+}
+
+.cube{
+    width: 60px;
+    height: 60px;
+    z-index: 10;
+}
+
+.c1{
+    left: var(--cube-starting);
+    bottom: var(--cube-bottom);
+}
+
+.c2{
+    left: calc(var(--cube-starting) + var(--cube-spacing));
+    bottom: var(--cube-bottom);
+}
+
+.c3{
+    left: calc(var(--cube-starting) + (var(--cube-spacing)*2));
+    bottom: var(--cube-bottom);
+}
+
+.c4{
+    left: calc(var(--cube-starting) + (var(--cube-spacing)*3));
+    bottom: var(--cube-bottom);
+}
+
+.c5{
+    left: calc(var(--cube-starting) + (var(--cube-spacing)*4));
+    bottom: var(--cube-bottom);
+}
+
+.c6{
+    left: calc(var(--cube-starting) + (var(--cube-spacing)*5));
+    bottom: var(--cube-bottom);
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+    animation: Rotate 5s infinite;
+}
+
+.logo:hover{
+    animation: bond 0.1s;
+}
+
+.l1{
+    left: var(--logo-starting);
+    bottom: var(--logo-bottom);
+}
+
+.l2{
+    left: calc(var(--logo-starting) + var(--logo-sapcing));
+    bottom: var(--logo-bottom);
+}
+
+.l3{
+    left: calc(var(--logo-starting) + var(--logo-sapcing) *2 );
+    bottom: var(--logo-bottom);
+}
+
+.l4{
+    left: calc(var(--logo-starting) + var(--logo-sapcing) *3 );
+    bottom: var(--logo-bottom);
+}
+
+.koopa{
     height: 80px;
+    bottom: 9.5%;
+    left: 45%
+}
+
+.tuyau{
     width: 80px;
-    margin: 24px;
+}
+
+.t1{
+    transform: rotate(90deg);
+    bottom: 10%;
+    left: 0;
+}
+
+.t1-1{
+    top: 0;
+    left: 50%;
+    z-index: 10;
+}
+
+.t1-2{
+    left: 50.5%;
+    top: 16%;
+    width: 60px;
+    animation: carnivore 1.5s alternate-reverse infinite;
+}
+
+.obus{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 25%;
+    left: -30vmin;
+    animation: leftToRight 10s infinite;
+    z-index: 90;
+}
+
+.mario-stage-end{
+    height: 90%;
+    right: 10%;
+    bottom: 8%;
+    z-index: 100;
+}
+
+.btn-header{
+    position: absolute;
+    width: 70px;
+    bottom: 40%;
+    right: 5%;
+    z-index: 10;
+    animation: heart 0.5s infinite alternate;
+}
+
+.label-end{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    bottom: 59%;
+    font-family: var(--font-titles);
+    font-size: 0.8em;
+    letter-spacing: var(-spacing);
+    text-transform: uppercase;
+    color: var(--font-light);
+    right: 2.5%;
+    z-index: 10;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.return-up:hover .label-end{
+    opacity: 1;
+    visibility: visible;
+}
+
+@keyframes leftToRight{
+    100%{
+        left: 150%;
+        display: none; 
+    }
+}
+
+@keyframes bond {
+    50%{
+        bottom: calc(var(--logo-bottom) + 2%);
+    }
+    100%{
+        bottom: var(--logo-bottom);
+    }
+}
+
+@keyframes carnivore {
+    100%{
+        top: 0%;
+    }
+}
+
+@keyframes Rotate{
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes heart{
+	100% { 
+        transform: scale(1.2); 
+    }
+}
+
+@media screen and (max-width: 2000px){
+
+    .objet{
+        display: none;
+    }
+    
+    footer {
+        height: 75vh;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+
+    .block-absolute, .block-relative{
+        position: static;
+    }
+
+    .objet{
+        display: none;
+    }
+
+    .logo{
+        display: flex;
+        position: absolute;
+        bottom: 2%;
+    }
+
+    footer {
+        position: relative;
+        height: 85vh;
+        background-size: cover;
+        justify-content: center;
+        width: 100%;
+    }
+
+    footer h2{
+        margin: 0;
+    }
+
+    .l1, .l2, .l3, .l4{
+        --logo-starting: 18%;
+    } 
+
+    .l2{
+        left: calc(var(--logo-starting) *2);
+    }
+
+    .l3{
+        left: calc(var(--logo-starting) *3);
+    }
+
+    .l4{
+        left: calc(var(--logo-starting) *4);
+    }
+
+    .btn-header{
+        display: block;
+        position: absolute;
+        top: 6%;
+        width: 14%;
+    }
+
+    .label-end{
+        position: absolute;
+        opacity: 1;
+        visibility: visible;    
+        right: 4%;
+        top: 4%;
+        font-size: 0.6em;
+    }
+
 }
