@@ -1,13 +1,12 @@
-.header{
-    width: 100vw;
-    height: 100vw;
-    background-color: var(--background-red);
+header{
+    width: 100%;
+    background-image: url('../../public/images/footer/mario-background_cropped_nocloud.png');
+    background-size: auto 100%;
 }
 
-.full-screen-menu, .navBurger{
+.full-screen-menu{
     display: flex;
     justify-content:space-around;
-    background-color: var(--background-red);
     align-items: center;
     width: 100%;
     height: 100px;
@@ -25,9 +24,10 @@
 
 .full-screen-menu a:hover{
     text-decoration:none;   
+    background-color: var( --font-light);
     color: var( --font-medium);
     font-family: var(--font-titles) ;
-    background-color: var(--background-light);
+    /*background-color: var(--background-light);*/
 }
 
 .mobile-nav{
@@ -36,7 +36,7 @@
 
 /*--------------------------------  Présentation    ------------------------------*/
 .presentation{
-    background-color: var(--background-red);
+    /*background-color: var(--background-red);*/
     width: 100%;
     text-align: center;
     display:flex;
@@ -45,12 +45,17 @@
     flex-direction: column;
 }
 
+.title-logo{
+    width: 75%;
+}
+
 .ImgMarioHalf{
     min-width: 400px;
     max-width: 30%;
     bottom: 0;
     margin: auto;
 }
+
 
 
 
@@ -92,7 +97,7 @@
     .mobile-nav{
         display:block;
         text-align: center;
-        background-color: var(--background-red);
+        /*background-color: var(--background-red);*/
         padding: var(--spacing); /*multiply by 3*/
     }
 
@@ -124,6 +129,7 @@
         padding: var(--spacing);
         animation: beat .50s infinite alternate;
         transform-origin: center;
+        filter:drop-shadow(5px 5px 4px black);
 
     }
 
