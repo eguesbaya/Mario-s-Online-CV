@@ -53,7 +53,8 @@
     margin: var(--spacing16px);
     height: var(--imgHeight);
    
-   
+    margin: 16px;
+    margin-top: 0;
     object-fit: contain;
  }
 

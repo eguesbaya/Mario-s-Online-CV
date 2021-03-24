@@ -13,6 +13,14 @@
     color: var(--font-medium);
 }
 
+.langages > h3{
+
+   
+
+}
+
+
+
 .flagsCards{
     display: flex;
     flex-wrap: wrap;
@@ -29,6 +37,7 @@
 
 .card .flag{
     
+   
     
     display: flex;
     margin-bottom: var(--spacing);  
@@ -38,8 +47,7 @@
 }
 
 .flag .flag-img{
-    margin: auto;
-    object-fit: cover;
+    margin: auto;    object-fit: cover;
     width: 150px;
     height: 150px;
     border: solid 1px;

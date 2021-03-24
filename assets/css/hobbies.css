@@ -17,6 +17,15 @@
 height: var(--imgHeight);
   width: 300px;
   height: 200px;
-  object-fit: contain;;
+  object-fit: contain;
+  margin: 16px;
+  margin-top: 0;
 }
 
+.hobbies .card h3{
+  font-family: var(--font-titles);
+  color: var(--font-medium);
+  letter-spacing: var(--spacing-letters-titles);
+  font-size: calc(var(--fontSize-title-others)*0.7);
+ /* padding: var( --spacing8px);*/
+}
