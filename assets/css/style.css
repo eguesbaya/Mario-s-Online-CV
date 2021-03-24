@@ -5,6 +5,7 @@
 @import 'hobbies.css';
 @import 'contact.css';
 @import 'footer.css';
+@import 'cards.css';
 
 @font-face{
     font-family: "mario";
@@ -81,6 +82,7 @@ h3{
     font-family: var(--font-titles);
     color: var(--font-medium);
     text-transform: uppercase;
+    font-size: var(--fontSize-title-others);
 }
 
 figcaption, p {
