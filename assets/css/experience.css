@@ -8,8 +8,6 @@
 }
 
 
-
-
 .experience{
     background-color: var(--background-light);
     padding: var(--spacing);
@@ -95,21 +93,14 @@
  }
 
 .textCard{
-
 display:none;
 text-align: center;
 width: 100%;
 }
 
-.experience .card:hover .imgTitre{
 
-
-
-}
 .experience  .card:hover .textCard{
     display:inline;
-    
-
 }
 
 .experience .card:hover img{
