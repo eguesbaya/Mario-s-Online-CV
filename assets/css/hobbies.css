@@ -10,40 +10,25 @@
   letter-spacing: var(--spacing-letters-titles);
 }
 
-.hobbies p {
-  align-items: initial;
+.hobbies h3 {
+  font-family: var(--font-titles);
   color: var(--font-medium);
-  font-family: "Roboto Condensed";
-  flex-wrap: wrap;
+  letter-spacing: var(--spacing-letters-titles);
+  
 }
 
-.hobbies .pixContainer {
-  justify-content: space-around;
-  align-items: center;
-  border-radius: 10px;
-  flex-wrap: wrap;
-  display: flex;
-}
 
-.hobbies .card-hobbies {
-  background-color: var(--background-yellow);
-  height: 270px;
-  width: 310px;
-  border-radius: 30px;
-  padding: 15px;
-  margin: 30px;
-}
 
-.hobbies .card-hobbies img {
-  width: 280px;
-  border-radius: 30px;
-  border-top-left-radius: 0px;
-  height: 200px;
-}
+
+
+
 
 .hobbies img {
-  max-width: 100%;
-  height: auto;
+  margin: var(--spacing16px);
+height: var(--imgHeight);
+  width: 300px;
+  height: 200px;
+  object-fit: contain;;
 }
 
 /*.left {
