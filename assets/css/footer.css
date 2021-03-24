@@ -235,7 +235,7 @@ footer h2{
 
 @keyframes mario-finish{
     100%{
-        bottom: 0;
+        bottom: 52%;
     }
 }
 
@@ -290,8 +290,10 @@ footer h2{
     }
     
     .mario-end{
-        bottom: -11%;
-        animation: mario-finish 5s;
+        bottom: 20%;
+        height: 21.5%;
+        z-index: 100;
+        animation: mario-finish 3s alternate infinite;
     }
 
     .btn-header{
