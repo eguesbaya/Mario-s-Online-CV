@@ -45,7 +45,7 @@ header{
 }
 
 .title-logo{
-    width: 75%;
+    width: 50%;
 }
 
 .ImgMarioHalf{
@@ -83,11 +83,6 @@ header{
 
 /*Mobile version*/
 @media screen and (min-width: 360px) and (max-width: 640px){
-
-    .presentation h1{
-        font-size: calc(var(--fontSize-title) - 4em);
-        color: var( --font-light);
-    }
 
    .full-screen-menu{
         display:none;
@@ -130,6 +125,10 @@ header{
         transform-origin: center;
         filter:drop-shadow(5px 5px 4px black);
 
+    }
+
+    .title-logo{
+        width: 75%;
     }
 
     /* Heart beat animation */
