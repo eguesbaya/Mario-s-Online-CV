@@ -4,7 +4,7 @@ footer {
     display: flex;
     justify-content: space-around;
 
-    background-image: url("../../images/footer/mario-background.jpg");
+    background-image: url("../../images/footer/mario-background-sans-nuages.png");
     background-size: contain;
 
     --cube-spacing: 52px;
