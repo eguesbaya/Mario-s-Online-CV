@@ -1,0 +1,111 @@
+/*.contact{
+    padding: var(--spacing);
+    background-color: var(--background-red);
+    border-radius: 30px 30px 0 0;
+}
+
+footer h2{
+    font-family: var(--font-titles);
+    font-size: var(--fontSize-title-others);
+    letter-spacing: var(--spacing);
+    color: var(--font-light);
+}
+
+.contact .form-all{
+    display: flex;
+    justify-content: center;
+}
+
+.contact .head-button{
+    display: flex;
+    justify-content: flex-start;
+    min-width: 320px;
+}
+
+.contact .block-button-head{
+    position: relative;
+}
+
+.contact .bubble-text{
+    position: absolute;
+    top: 80px;
+    left: 110px;
+    background: var(--background-light); 
+    color: var(--font-medium); 
+    padding: 7px 15px; 
+    border-radius: 30px; 
+    width: 130px;
+}
+
+.contact .bubble-text > a {
+    text-decoration: none;
+}
+
+.contact .bubble-text::after{
+    content:""; 
+    border-left: 20px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 25px solid var(--background-light);
+    position: absolute;
+    left: 10%;
+    bottom: -50%;
+}
+
+.contact .contact-head{
+    width: 300px;
+    height: 300px
+}
+
+.contact .contact-form{
+    justify-content: center;
+}
+
+.contact .body-form{
+    display: flex;
+    flex-direction: column;
+    margin-left: calc(var(--spacing)*6);
+    min-width: 300px;
+}
+
+.contact .body-form > textarea{
+    min-width: 300px;
+    min-height: 100px;
+}
+
+.contact .body-form > input,  .body-form > textarea{
+    margin-bottom: var(--spacing);
+    padding: calc(var(--spacing) + 2px);
+    background-color: var(--background-light);
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 660px){
+    .contact .form-all{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contact .form-all a{
+        display: none;
+    }
+
+    .contact{
+        text-align: center;
+    }
+
+    .contact h1{
+        margin-bottom: var(--spacing);
+    }
+
+    .contact .body-form{
+        margin-left: 0;
+        min-width: 0;
+    }
+
+    .contact .body-form > textarea{
+        min-width: 0px;
+        min-height: 0px;
+    }
+
+}*/

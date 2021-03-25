@@ -1,0 +1,94 @@
+/*Section 5:Hobbies (Nicolas)*/
+.hobbies {
+  font-family: "Roboto Condensed";
+  background-color: rgba(0,95,185,255);
+}
+
+.hobbies h2 {
+  color: var(--background-light);
+  font-family: "mario";
+  font-size: var(--fontSize-title-others);
+  letter-spacing: var(--spacing-letters-titles);
+}
+
+.hobbies h3 {
+  font-family: var(--font-titles);
+  color: var(--font-medium);
+  letter-spacing: var(--spacing-letters-titles);
+  
+}
+
+.hobbies img {
+  margin: var(--spacing16px);
+  height: var(--imgHeight);
+  width: 200px;
+  height: 200px;
+  object-fit: contain;;
+}
+
+.blockQuestion{
+  display:flex;
+
+}
+
+.lexique{
+  display:flex;
+  margin-left: 300px;
+  margin-right: 300px;
+  text-align: center;
+  background-color: rgba(0,95,185,255);
+}
+
+.lexique > h2{
+    font-family: var(--font-titles);
+    font-size: var(--fontSize-title-others);
+    letter-spacing: var(--spacing-letters-titles);
+   
+}
+
+.lexique  p{
+  margin-top:50px;
+   font-size: 1.4em;
+    color: var(--background-light);
+
+}
+
+/*.left {
+ display:inline-block;
+  margin-left: 28%;
+  justify-content: space-between;
+  align-items: initial;
+  color: var(--font-medium);
+  font-family: "Roboto Condensed";
+  flex-wrap: wrap;
+  font-size: 1.8em;
+}
+
+
+.right {
+  display: inline-block;
+    width: 100px;
+    height: 40px;
+   display: flex;
+    width: 700px;
+    height: 40px;
+    margin-left: 100px;
+    position: absolute;
+    right: 50px;
+    top: 60px;
+ max-width: 70%;
+}
+
+
+/*.right {
+  
+    min-height: 0px;
+
+  justify-content: space-between;
+  align-items: initial;
+  color: var(--font-medium);
+  font-family: "Roboto Condensed";
+  flex-wrap: wrap;
+  font-size: 1.2em;
+ 
+}*/

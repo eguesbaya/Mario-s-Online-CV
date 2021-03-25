@@ -1,8 +1,16 @@
+@import "header.css";
+@import "experience.css";
+@import "skills.css";
+@import "langages.css";
+@import 'hobbies.css';
+@import 'contact.css';
+@import 'footer.css';
+
 @font-face{
     font-family: "mario";
     src: url("../../public/fonts/SuperMarioBrothers-4nmp.ttf");
 }
-/* latin */
+
 @font-face {
     font-family: 'Roboto Condensed';
     font-style: normal;
@@ -26,12 +34,16 @@
     /*Variables: font style*/
     --font-titles: "mario";
     --font-others: 'Roboto Condensed';
-    --fontSize-title: 0.8em;
-    --fontSize-title-others: calc(var(--fontSize-title) - 0.2em);
+    --fontSize-title: 8em;
+    --fontSize-title-others: 1.8em;
+    
     --spacing-letters-titles: 0.3em;
-
+    /*--fontSize-title: 6em;
+    --fontSize-title-others: calc(var(--fontSize-title) - 0.2em);*/
+    
     /*spacing*/
     --spacing: 8px;
+    --borderSolid: solid 3px;
 }
 
 *{
@@ -40,92 +52,56 @@
     padding: 0;
 }
 
-/*Section 2: Work Experience (Emma)*/
-.experience{
+body{
+    /*padding: 0 calc(var(--spacing)*16);*/
     background-color: var(--background-light);
-    padding: var(--spacing);
 }
 
-h4, p{
-    font-family:var(--font-others);
-    width: 100%;
+.mainContainer{
+    max-width: 75%;
+    background-color: white;
+    margin: auto;
+}
+
+h1{
+    font-family: var(--font-titles) ;
+    font-size: calc(var(--fontSize-title) - 2em);
+    color: var( --font-light);
+    letter-spacing:var(--spacing-letters-titles);
+    margin-top: 60px; /*Multiplier la variable "spacing" ne fonctionnait pas*/
+}
+
+h2{
+    font-family: var(--font-titles);
+    font-size: var(--fontSize-title-others);
+    letter-spacing: var(--spacing);
+    text-transform: uppercase;
     color: var(--font-medium);
+    padding: calc(var(--spacing) * 3);
+    margin-left: 2%;
+    margin-top: calc(var(--spacing) * 3);
 }
 
-
-h2, h3{
+h3{
     font-family: var(--font-titles);
     color: var(--font-medium);
+    text-transform: uppercase;
+}
+
+figcaption, p {
+    color: var(--font-medium);
+}
+
+p{
+    font-size: 1.17em;
 }
 
 
-.intro-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 50px;
-}
-
-.intro-paragraph {
-    width: 40%;
-}
-
-.card-container{
-    width: 100%;
-    display:flex;
-    justify-content: space-around;
-    align-items: stretch;
-    flex-wrap: wrap;
-}
-
-.card {
-    background-color: var(--background-yellow);
-    width: 30%;
-    border-radius: 30px;
-    padding: 16px;
-    margin: 8px;
-    display:flex;
-    flex-direction: column;
-
-}
-
-.card-content{
-    flex:1;
-    text-align: justify;
-}
-
-img{
-    width: 125px;
-    height: 125px;
-}
-
-/*.card > img {
-    max-height: 125px;
-}*/
-
-@media screen and (min-width: 200px) and (max-width: 667px) {
-    .card {
-      width: 100%;
+@media screen and (max-width: 360px){
+    h2{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        width: 100%;
     }
-    .card > p{
-        display:none;
-    }
-
-    .intro-paragraph{
-        display:none;
-    }
-
-    .card > img{
-        min-width:125px;
-    }
-  }
-
-@media screen and (min-width: 667px) and (orientation: landscape) {
-      .card{
-          width: 20%;
-      }
-
-    }
-  }
-
+}
