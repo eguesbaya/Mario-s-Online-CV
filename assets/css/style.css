@@ -58,6 +58,14 @@ body{
     /*padding: 0 calc(var(--spacing)*16);*/
     background-color: var(--background-light);
 }
+.mainContainer{
+    max-width: 75%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5) ;
+    border: 5px solid rgba(57,40,0,255);
+    
+    border-radius: 20px;
+}
 
 h1{
     font-family: var(--font-titles) ;
