@@ -5,6 +5,7 @@
 @import 'hobbies.css';
 @import 'contact.css';
 @import 'footer.css';
+@import 'cards.css';
 
 @font-face{
     font-family: "mario";
@@ -50,7 +51,7 @@
 	box-sizing: border-box;
     margin: 0;
     padding: 0;
-    cursor: url('../../images/cursor_mario.png'), pointer;
+    cursor: url('../../images/cursor_mario2.png'),  pointer;
 }
 
 body{
@@ -81,6 +82,7 @@ h3{
     font-family: var(--font-titles);
     color: var(--font-medium);
     text-transform: uppercase;
+    font-size: var(--fontSize-title-others);
 }
 
 figcaption, p {
@@ -89,14 +91,4 @@ figcaption, p {
 
 p{
     font-size: 1.17em;
-}
-
-
-@media screen and (max-width: 360px){
-    h2{
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        width: 100%;
-    }
 }

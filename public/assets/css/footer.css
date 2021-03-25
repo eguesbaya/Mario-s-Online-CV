@@ -4,7 +4,7 @@ footer {
     display: flex;
     justify-content: space-around;
 
-    background-image: url("../../images/footer/mario-background.jpg");
+    background-image: url("../../images/footer/mario-background-sans-nuages.png");
     background-size: contain;
 
     --cube-spacing: 52px;
@@ -21,8 +21,9 @@ body{
 }
 
 footer h2{
-    color: var(--font-light);
-    margin-top: 5%;
+    color: #f3bda5;
+    margin-left: 14%;
+    text-shadow: 2px 1px 1px black;
 }
 
 .contact{
@@ -32,9 +33,9 @@ footer h2{
 }
 
 .contact-form{
-    top: 2%;
-    left: 15%;
+    left: 13%;
     z-index: 100;
+    top: 100px;
 }
 
 .contact .body-form{
@@ -49,14 +50,24 @@ footer h2{
     font-size: 0.8em;
     letter-spacing: var(-spacing);
     text-transform: uppercase;
-    color: var(--font-light);
+    color: #f3bda5;
+    text-shadow: 2px 1px 1px black;
 }
 
 .contact .body-form input,  .body-form textarea{
     margin-bottom: var(--spacing);
-    padding: var(--spacing);
+    padding: 6px;
     background-color: var(--background-light);
-    border-radius: 20px;
+    border-radius: 10px;
+}
+
+.contact .body-form .submit{
+    background-color: #a85833;
+}
+
+.body-form textarea{
+    height: 100px;
+    width: 300px;
 }
 
 .return{
@@ -202,7 +213,7 @@ footer h2{
     width: 55px;
     right: 39px;
     bottom: 9%;
-    animation: arrowUpAndDown 1s infinite;
+    animation: arrowUpAndDown 2s infinite;
     opacity: 0.6;
 }
 
@@ -254,7 +265,7 @@ footer h2{
 
 @keyframes mario-finish{
     100%{
-        bottom: 48%;
+        bottom: 50%;
     }
 }
 
@@ -286,7 +297,7 @@ footer h2{
     .objet{
         --cube-spacing: 35px;
         --cube-bottom: 100px;
-        --cube-starting: 50%;
+        --cube-starting: 53%;
         --logo-sapcing: 41px;
         --logo-starting: calc(var(--cube-starting) + 45px);
         --logo-bottom: var(--cube-bottom);
@@ -385,19 +396,26 @@ footer h2{
         height: 7%;
         display: flex;
         position: absolute;
-        bottom: 2%;
+        bottom: 12%;
     }
 
     footer {
         position: relative;
-        height: 85vh;
-        background-size: cover;
         justify-content: center;
+        text-align: center;
         width: 100%;
     }
 
-    footer h2{
-        margin: 0;
+    footer h2 {
+        position: static;
+        margin-left: 0;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    .contact .body-form label{
+        padding-left: 0px;
+
     }
 
     .l1, .l2, .l3, .l4{
@@ -420,7 +438,8 @@ footer h2{
         display: block;
         position: absolute;
         top: 6%;
-        width: 14%;    bottom: 9%;
+        width: 14%;    
+        bottom: 9%;
     }
 
     .label-end{
@@ -432,4 +451,10 @@ footer h2{
         font-size: 0.6em;
     }
 
+}
+
+@media screen and (max-width: 670px){
+    footer{
+        background-size: cover;
+    }
 }
