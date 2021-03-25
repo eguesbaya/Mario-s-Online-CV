@@ -16,9 +16,13 @@
 
     <h1> merci <?php echo $_POST['firstname'] . " !" ?></h1>
 
-    <p>J'ai bien reçu ton message. Mes fidèles secrétaires champignons reviendront vers toi dans les plus brefs délais
+    <p class="form-p">J'ai bien reçu ton message. Mes fidèles secrétaires champignons reviendront vers toi dans les plus brefs délais
         via <strong> <?php echo $_POST['email'] ?></strong>.
     </p>
+    
+    <p>
+        <a class="back-to-main" href = "/index.php">BACK TO MAIN SITE</a>
+</p>
 
 </section>
     
