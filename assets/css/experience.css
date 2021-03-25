@@ -61,15 +61,15 @@
 
 
 
-.experience  .card:hover .textCard{
+.card:hover .textCard{
     display:inline;
 }
 
-.experience .card:hover img{
+ .card:hover img{
    height: 100px;    
 }
 
-.experience .card:hover h3{
+ .card:hover h3{
   
     font-size: calc(var(--fontSize-title-others)*0.7);
 }
