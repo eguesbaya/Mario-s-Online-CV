@@ -27,7 +27,6 @@ header{
     background-color: var( --font-light);
     color: var( --font-medium);
     font-family: var(--font-titles) ;
-    /*background-color: var(--background-light);*/
 }
 
 .mobile-nav{
