@@ -1,0 +1,36 @@
+@import "style.css";
+
+h1{
+    color: red;
+}
+
+.form-body{
+    background-image: url('images/footer/mario-background-sans-nuages.png');
+    background-color: black;
+    display:flex;
+    align-items: start;
+    padding: calc(var(--spacing)*5);
+    max-width: 100%;
+
+}
+
+.form-message{
+    max-width:100%;
+
+}
+
+.toad{
+    max-width: 100%;
+    min-width: 50%;
+}
+
+@media screen and (min-width: 360px) and (max-width: 640px){
+    .form-body{
+        display:block;
+    }
+
+    h1{
+        font-size: 30px;
+        width: 100%;
+    }
+}
