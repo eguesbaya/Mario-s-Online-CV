@@ -9,11 +9,11 @@ footer {
 
     --cube-spacing: 52px;
     --cube-bottom: 40%;
-    --cube-starting: 44%;
+    --cube-starting: 40%;
     --cube-z-index: 0;
     --logo-sapcing: 52px;
     --logo-starting: calc((var(--cube-starting) + 10.5px) + var(--logo-sapcing));
-    --logo-bottom: calc(var(--cube-bottom) + 13%);
+    --logo-bottom: calc(var(--cube-bottom) + 60px);
 }
 
 body{
@@ -164,20 +164,20 @@ footer h2{
 
 .t1-1{
     top: 0;
-    left: 50%;
+    left: calc(var(--cube-starting) + 121px);
     z-index: 10;
 }
 
 .t1-2{
-    left: 50.5%;
+    left: calc((var(--cube-starting) + 121px) + 10px);
     top: 16%;
     width: 60px;
     animation: carnivore 1.5s alternate-reverse infinite;
 }
 
 .mario-stage-end{
-    right: 20%;
-    bottom: 8%;
+    right: 21%;
+    bottom: 9%;
 }
 
 .mario-pole{
@@ -186,31 +186,21 @@ footer h2{
 }
 
 .mario-end{
-    right: 20.06%;
     bottom: 20%;
     height: 24.5%;
     z-index: 91;
     animation: mario-finish 3s alternate infinite;
 }
 
-.btn-header{
-    position: absolute;
-    width: 70px;
-    bottom: 40%;
-    right: 5%;
-    z-index: 10;
-    animation: heart 0.5s infinite alternate;
-}
-
 .door{
     right: 0;
     bottom: 9%;
-    width: 8%;
+    width: 130px;
 }
 
 .arrow{
-    width: 3%;
-    right: 2.6%;
+    width: 55px;
+    right: 39px;
     bottom: 9%;
     animation: arrowUpAndDown 1s infinite;
     opacity: 0.6;
@@ -218,7 +208,7 @@ footer h2{
 
 .carapace{
     visibility: hidden;
-    width: 3%;
+    width: 60px;
     transform: scaleX(-1);
     bottom: 10%;
     left: 0;
@@ -241,7 +231,7 @@ footer h2{
     }
 
     50%{
-        left: 71%
+        left: 70%
     }
 
     77%{ 
@@ -258,7 +248,7 @@ footer h2{
 
 @keyframes arrowUpAndDown{
     100%{
-        bottom: 30%;
+        bottom: 28%;
     }
 }
 
@@ -289,87 +279,98 @@ footer h2{
     }
 }
 
-@keyframes heart{
-	100% { 
-        transform: scale(1.2); 
+
+
+@media screen and (max-width: 1279px){
+
+    .objet{
+        --cube-spacing: 35px;
+        --cube-bottom: 100px;
+        --cube-starting: 50%;
+        --logo-sapcing: 41px;
+        --logo-starting: calc(var(--cube-starting) + 45px);
+        --logo-bottom: var(--cube-bottom);
     }
-}
 
-@media screen and (max-width: 1500px){
+    .t1-1, .t1-2{
+        display: none;
+    }
 
+    .cube{
+        width: 40px;
+        height: 40px;
+        z-index: 10;
+
+        left: var(--cube-starting);
     
-    footer {
-        height: 75vh;
-        width: 100%;
-
-        --cube-starting: 42%;
-    }
-
-    .t1-2{
-        top: 13%;
-        left: 50.8%;
-    }
-
-    .btn-header{
-        position: absolute;
-        bottom: 65%;
-        right: 4%;
-    }
-
-    .label-end{
-        bottom: 85%;
-        right: 1.5%;
-    }
-
-    .contact-form{
-        left: 22%;
-    }
-
-    .mario-stage-end{
-        right: 16%;
-        bottom: 8%;
     }
     
-    .mario-pole{
-        height: 70%;
-        z-index: 90;
+    .c1{
+        bottom: var(--cube-bottom);
     }
     
-    .mario-end{
-        right: 15.1%;
-        bottom: 20%;
-        height: 24.5%;
-        z-index: 91;
-        animation: mario-finish 3s alternate infinite;
-    }
-
-    .door{
-        right: 0;
-        bottom: 9%;
-        width: 11%;
+    .c2{
+        bottom: calc(var(--cube-bottom) + var(--cube-spacing));
     }
     
-    .arrow{
-        width: 4%;
-        right: 3.6%;
-        bottom: 9%;
-        animation: arrowUpAndDown 1s infinite;
-        opacity: 0.6;
+    .c3{
+        bottom: calc(var(--cube-bottom) + (var(--cube-spacing)*2));
+    }
+    
+    .c4{
+        bottom: calc(var(--cube-bottom) + (var(--cube-spacing)*3));
+    }
+    
+    .c5{
+        bottom: calc(var(--cube-bottom) + (var(--cube-spacing)*4));
+    }
+    
+    .c6{
+        bottom: calc(var(--cube-bottom) + (var(--cube-spacing)*5));
     }
 
-    .carapace{
-        width: 4%;
+    .logo{
+        width: 29px;
+        height: 29px;
+        z-index: 10;
+        animation: Rotate 5s infinite;
+
+        left: var(--logo-starting);
+    }
+    
+    .logo:hover{
+        animation: bond 0.1s;
+    }
+    
+    .l1{
+        bottom: calc(var(--cube-bottom) + var(--logo-sapcing));
     }
 
-    @keyframes arrowUpAndDown{
+    .l2{
+        bottom: calc(var(--cube-bottom) + var(--logo-sapcing) + 35px);
+    }
+
+    .l3{
+        bottom: calc(var(--cube-bottom) + var(--logo-sapcing) + 70px);
+    }
+
+    .l4{
+        bottom: calc(var(--cube-bottom) + var(--logo-sapcing) + 105px);
+    }
+
+    @keyframes bond {
+        50%{
+            left: calc(var(--logo-starting) + 2%);
+        }
         100%{
-            bottom: 20%;
+            left: var(--logo-starting);
         }
     }
 
 }
 
-@media screen and (max-width: 600px){
+
+@media screen and (max-width: 800px){
 
     .block-absolute, .block-relative{
         position: static;
