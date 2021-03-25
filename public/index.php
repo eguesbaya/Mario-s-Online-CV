@@ -361,10 +361,6 @@
             <div class="contact" id="contact">
 
                 <form class="contact-form block-absolute" action="#contact" method="POST" >
-                <?php
-                var_dump($_POST);
-                ?>
-    
                     <div class="body-form">
                         <label for="lastname">NOM</label>
                         <input type="text" name="lastname" id="lastname" placeholder="Bross" required>
