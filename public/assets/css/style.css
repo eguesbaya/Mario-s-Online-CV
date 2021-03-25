@@ -8,7 +8,7 @@
 
 @font-face{
     font-family: "mario";
-    src: url("../../public/fonts/SuperMarioBrothers-4nmp.ttf");
+    src: url("../../fonts/SuperMarioBrothers-4nmp.ttf");
 }
 
 @font-face {
@@ -50,7 +50,7 @@
 	box-sizing: border-box;
     margin: 0;
     padding: 0;
-    cursor: url('../../public/images/cursor_mario.png'), pointer;
+    cursor: url('../../images/cursor_mario.png'), pointer;
 }
 
 body{
