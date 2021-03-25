@@ -5,17 +5,22 @@
 }
 
 .hobbies h2 {
-  color: var(--background-light);
-  font-family: "mario";
-  font-size: var(--fontSize-title-others);
-  letter-spacing: var(--spacing-letters-titles);
+    font-family: var(--font-titles);
+    letter-spacing: var(--spacing-letters-titles);
+    color: var(--font-light);
+    text-decoration:none; 
+    border: var(--borderSolid); 
+    border-radius: 10px;
+    /*margin-right: 1690px;*/
+    margin:auto;
+    font-size:1.3em;
+    padding: 10px; 
 }
 
 .hobbies h3 {
   font-family: var(--font-titles);
   color: var(--font-medium);
   letter-spacing: var(--spacing-letters-titles);
-  
 }
 
 .hobbies img {
@@ -47,11 +52,31 @@
 }
 
 .lexique  p{
-  margin-top:50px;
-   font-size: 1.4em;
-    color: var(--background-light);
+  /*margin-top:50px;*/
+   /*font-size: 1.4em;*/
+    /*color: var(--background-light);*/
 
+    /*font-family: var(--font-titles);*/
+    letter-spacing: var(--spacing-letters-titles);
+    color: var(--font-light);
+    text-decoration:none; 
+    border: var(--borderSolid); 
+    border-radius: 10px;
+    margin:auto;
+    font-size:1.3em;
+    padding: 10px; 
 }
+
+
+@media all and (max-width: 600px) {
+  .lexique {
+    display: inline-block;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+}
+
+
 
 /*.left {
  display:inline-block;

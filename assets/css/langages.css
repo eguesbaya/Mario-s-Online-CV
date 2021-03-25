@@ -8,9 +8,14 @@
 
 .langages > h2{
     font-family: var(--font-titles);
-    font-size: var(--fontSize-title-others);
     letter-spacing: var(--spacing-letters-titles);
     color: var(--font-light);
+    text-decoration:none; 
+    border: var(--borderSolid); 
+    margin-right: 1690px;
+    font-size:1.3em;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .langages  p{
@@ -81,9 +86,18 @@
         left: 65%;
     }
 }
-/*@media all and (max-height:10%){
-    .langages{
-    height:2350px;
+
+/*@media all and (max-width: 320px) {
+  .flag-img{
+    display:block;
+
+    width: 50%;
+    flex-wrap: nowrap;
+    height: 50px;
+  }
+}
+
+   /* height:2350px;
     display: none;
     flex-direction: column;
     margin-left:0%;
