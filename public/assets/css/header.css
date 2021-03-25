@@ -90,7 +90,7 @@ header{
     .mobile-nav{
         display:block;
         text-align: center;
-        padding: var(--spacing); /*multiply by 3*/
+        padding-top: var(--spacing); /*multiply by 3*/
     }
 
     #mobile-menu {
