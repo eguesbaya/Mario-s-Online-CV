@@ -13,14 +13,7 @@
     padding: var(--spacing);
 }
 
-.experience h4, .experience p{
-    font-family:var(--font-others);
-    width: 100%;
-    color: var(--font-medium);
-    padding: var( --spacing16px) ;
-    font-weight: bolder;
 
-}
 
 .experience h2 {
     font-family: var(--font-titles);
@@ -29,13 +22,7 @@
     letter-spacing: var(--spacing-letters-titles);
 }
 
-.experience h3{
-    font-family: var(--font-titles);
-    color: var(--font-medium);
-    letter-spacing: var(--spacing-letters-titles);
-    
-   /* padding: var( --spacing8px);*/
-}
+
 
 .experience .intro-container{
     display: flex;
@@ -60,43 +47,18 @@
     flex-wrap: wrap;
 }
 
-.card {
-    /*background-color: var(--background-yellow);*/
-    background-image: var(--CardsbarckgroundImage);
-    background-size:100%;
-    background-repeat: no-repeat;
 
-   width: var(--cubeWidthHeight);
-   height: var(--cubeWidthHeight);
-
-    
-    margin: 16px;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    
-    position:relative;
-}
-
-.imgTitre{
-    text-align: center;  
-
-    
-}
 
 .experience img{
     margin: var(--spacing16px);
     height: var(--imgHeight);
    
-   
+    margin: 16px;
+    margin-top: 0;
     object-fit: contain;
  }
 
-.textCard{
-display:none;
-text-align: center;
-width: 100%;
-}
+
 
 
 .experience  .card:hover .textCard{
@@ -107,6 +69,10 @@ width: 100%;
    height: 100px;    
 }
 
+.experience .card:hover h3{
+  
+    font-size: calc(var(--fontSize-title-others)*0.7);
+}
 
 
 @media screen and (min-width: 200px) and (max-width: 667px) {
