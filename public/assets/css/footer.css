@@ -21,7 +21,7 @@ body{
 }
 
 footer h2{
-    color: var(--font-light);
+    color: #f3bda5;
     margin-left: 14%;
     text-shadow: 2px 1px 1px black;
 }
@@ -50,7 +50,7 @@ footer h2{
     font-size: 0.8em;
     letter-spacing: var(-spacing);
     text-transform: uppercase;
-    color: var(--font-light);
+    color: #f3bda5;
     text-shadow: 2px 1px 1px black;
 }
 
@@ -213,7 +213,7 @@ footer h2{
     width: 55px;
     right: 39px;
     bottom: 9%;
-    animation: arrowUpAndDown 1s infinite;
+    animation: arrowUpAndDown 2s infinite;
     opacity: 0.6;
 }
 
@@ -265,7 +265,7 @@ footer h2{
 
 @keyframes mario-finish{
     100%{
-        bottom: 48%;
+        bottom: 50%;
     }
 }
 
@@ -401,7 +401,6 @@ footer h2{
 
     footer {
         position: relative;
-        background-size: cover;
         justify-content: center;
         text-align: center;
         width: 100%;
@@ -412,6 +411,11 @@ footer h2{
         margin-left: 0;
         margin-bottom: 20px;
         padding: 0;
+    }
+
+    .contact .body-form label{
+        padding-left: 0px;
+
     }
 
     .l1, .l2, .l3, .l4{
@@ -434,7 +438,8 @@ footer h2{
         display: block;
         position: absolute;
         top: 6%;
-        width: 14%;    bottom: 9%;
+        width: 14%;    
+        bottom: 9%;
     }
 
     .label-end{
@@ -446,4 +451,10 @@ footer h2{
         font-size: 0.6em;
     }
 
+}
+
+@media screen and (max-width: 670px){
+    footer{
+        background-size: cover;
+    }
 }
