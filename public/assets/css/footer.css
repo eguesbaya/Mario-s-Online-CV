@@ -4,7 +4,7 @@ footer {
     display: flex;
     justify-content: space-around;
 
-    background-image: url("../../public/images/footer/mario-background.jpg");
+    background-image: url("../../images/footer/mario-background.jpg");
     background-size: contain;
 
     --cube-spacing: 52px;
@@ -306,6 +306,7 @@ footer h2{
     }
 
     .t1-2{
+        top: 13%;
         left: 50.8%;
     }
 
