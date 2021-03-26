@@ -17,13 +17,8 @@
     font-family: "mario";
 }
 
-.towns{
-    background-image: url("../../images/icons/background.png");
-}
-
 .langages p{
     font-size: 1.4em;
-
 }
 
 .flagsCards{
@@ -33,15 +28,13 @@
     margin-right:10%;
     flex-wrap: wrap;
     justify-content:space-around;
-    font-family: var(--font-others);
-   
+    font-family: var(--font-others); 
 }
 
 .flagsCards .card{
     display: flex;
     flex-direction: column;
     text-align: center;
-
 }
 
 .card .flag{
@@ -88,28 +81,4 @@
     }
 }
 
-.marioRacoon{
-    position:relative;
-    top: -20px;
-    left: 0;
-    animation-name: drive, mario-jump;
-    animation-duration: 5s;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
-    animation-delay: 0;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
-@keyframes drive {
-  from { transform: translateX(-200px)}
-  to { transform: translateX(2000px)}
-}
-
-@keyframes mario-jump {
-  0% {top: -20px}
-  30% {top: -50px}
-  35% {top: -20px}
-  100% {top: -20px}
-}
 
