@@ -2,118 +2,94 @@
 .hobbies {
   font-family: "Roboto Condensed";
   background-color: rgba(0,95,185,255);
+  min-height: 400px;
 }
 
 .hobbies h2 {
-    font-family: var(--font-titles);
-    letter-spacing: var(--spacing-letters-titles);
-    color: var(--font-light);
-    text-decoration:none; 
-    border: var(--borderSolid); 
-    border-radius: 10px;
-    /*margin-right: 1690px;*/
-    margin:auto;
-    font-size:1.3em;
-    padding: 10px; 
+  background-image: url(../../public/images/icons/backgroundBlockGood.png);
+  color: var(--font-light);
+  font-family: "mario";
+  font-size: var(--fontSize-title-others);
+  letter-spacing: var(--spacing-letters-titles);
+  border: 5px outset #1C6EA4;
+  border-radius: 40px;
+  text-align: center;
+  margin-right: auto;
+  padding: 10px;
 }
 
-.hobbies h3 {
-  font-family: var(--font-titles);
-  color: var(--font-medium);
-  letter-spacing: var(--spacing-letters-titles);
+.holidays{
+  background-image: url(../../public/images/icons/background.png);
+}
+
+.marioRacoon{
+    position:relative;
+    top: -20px;
+    left: 0;
+    animation-name: drive, mario-jump;
+    animation-duration: 5s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 0;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes drive {
+  from { transform: translateX(-200px)}
+  to { transform: translateX(2000px)}
+}
+
+@keyframes mario-jump {
+  0% {top: -20px}
+  30% {top: -50px}
+  35% {top: -20px}
+  100% {top: -20px}
+}
+
+
+
+.right p{
+    font-family:'Roboto Condensed';
+    letter-spacing: var(--spacing-letters-titles);
+    color: var(--font-light);
+    border: 5px outset #1C6EA4;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 1.2em; 
+    margin-right: auto;
+    padding: 5px;
+    box-shadow:inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
 .hobbies img {
-  margin: var(--spacing16px);
+  margin: var(--spacing8px);
   height: var(--imgHeight);
-  width: 200px;
+  width: 300px;
   height: 200px;
-  object-fit: contain;;
+  object-fit: contain;
+  margin: 16px;
+  margin-top: 0;
 }
 
-.blockQuestion{
-  display:flex;
-
+.hobbies .card h3{
+  font-family: var(--font-titles);
+  color: var(--font-medium);
+  letter-spacing: var(--spacing-letters-titles);
+  font-size: calc(var(--fontSize-title-others)*0.7);
+ /* padding: var( --spacing8px);*/
 }
 
-.lexique{
-  display:flex;
-  margin-left: 300px;
-  margin-right: 300px;
-  text-align: center;
-  background-color: rgba(0,95,185,255);
-}
-
-.lexique > h2{
-    font-family: var(--font-titles);
-    font-size: var(--fontSize-title-others);
-    letter-spacing: var(--spacing-letters-titles);
-   
-}
-
-.lexique  p{
-  /*margin-top:50px;*/
-   /*font-size: 1.4em;*/
-    /*color: var(--background-light);*/
-
-    /*font-family: var(--font-titles);*/
+.backgroundBlocks{
+    background-image: url(../../public/images/icons/backgroundBlockGood.png);
+    height: 50px;
+    width: 2550px;
+    font-family:'Roboto Condensed';
     letter-spacing: var(--spacing-letters-titles);
     color: var(--font-light);
-    text-decoration:none; 
-    border: var(--borderSolid); 
-    border-radius: 10px;
-    margin:auto;
-    font-size:1.3em;
-    padding: 10px; 
+    border: 5px outset #1C6EA4;
+    border-radius: 40px;
+    font-size: 1.2em; 
+    margin-right: auto;
+    padding: 5px;
 }
-
-
-@media all and (max-width: 600px) {
-  .lexique {
-    display: inline-block;
-    width: 100%;
-    flex-wrap: nowrap;
-  }
-}
-
-
-
-/*.left {
- display:inline-block;
-  margin-left: 28%;
-  justify-content: space-between;
-  align-items: initial;
-  color: var(--font-medium);
-  font-family: "Roboto Condensed";
-  flex-wrap: wrap;
-  font-size: 1.8em;
-}
-
-
-.right {
-  display: inline-block;
-    width: 100px;
-    height: 40px;
-   display: flex;
-    width: 700px;
-    height: 40px;
-    margin-left: 100px;
-    position: absolute;
-    right: 50px;
-    top: 60px;
- max-width: 70%;
-}
-
-
-/*.right {
-  
-    min-height: 0px;
-
-  justify-content: space-between;
-  align-items: initial;
-  color: var(--font-medium);
-  font-family: "Roboto Condensed";
-  flex-wrap: wrap;
-  font-size: 1.2em;
- 
-}*/
