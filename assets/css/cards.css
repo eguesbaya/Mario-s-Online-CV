@@ -1,0 +1,64 @@
+:root{
+    --imgHeight: 150px;
+    --spacing16px: 16px;
+    --spacing8px: 8px;
+    --borderRadius: 8px;
+    --CardsbarckgroundImage: url("../../public/images/experience/caisse_sans.png");
+    --cubeWidthHeight: 355px;
+}
+
+
+
+.card h3{
+    font-family: var(--font-titles);
+    color: var(--font-medium);
+    letter-spacing: var(--spacing-letters-titles);
+    
+   /* padding: var( --spacing8px);*/
+}
+
+.card h4, .card p{
+    font-family:var(--font-others);
+    width: 100%;
+    color: var(--font-medium);
+    padding: var( --spacing16px) ;
+    font-weight: bolder;
+
+}
+
+.card {
+    /*background-color: var(--background-yellow);*/
+    background-image: var(--CardsbarckgroundImage);
+    background-size:100%;
+    background-repeat: no-repeat;
+
+   width: var(--cubeWidthHeight);
+   height: var(--cubeWidthHeight);
+
+    
+    margin: 40px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    position:relative;
+}
+
+
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.imgTitre{
+    text-align: center;  
+    
+}
+
+
+.textCard{
+    display:none;
+    text-align: center;
+    width: 100%;
+}

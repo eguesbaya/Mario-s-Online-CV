@@ -1,3 +1,20 @@
+<?php
+$formData = array_map('trim', $_POST);
+
+$indexData = ['lastname', 'firstname', 'email', 'message'];
+$errors = [];
+
+foreach ($formData as $key => $value) {
+    if (empty($formData[$key])) {
+        $errors[$key] = 'The form field ' . ucfirst($key) . ' must be filled';
+    }
+    if ($key === 'email' && !filter_var($value, FILTER_VALIDATE_EMAIL)) {
+        $errors['emailType'] = 'The email format is not valid';
+    }
+    $formData[$key] = htmlentities($value);    
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,13 +32,22 @@
     
     <section class="form-message">
 
-    <h1> merci <?= $_POST['firstname'] . " !" ?></h1>
+    <?php if (!empty($errors)): ?>
+        <ul>
+        <?php foreach ($errors as $key => $message): ?>
+            <li>
+                <?php  ?>
+            </li>
+        </ul>
+
+
+    <h1> merci <?= $formData['firstname'] . " " . $formData['lastname'] . " !" ?></h1>
 
     <p class="form-p">J'ai bien reçu ton message. Mes fidèles secrétaires champignons reviendront vers toi dans les plus brefs délais
-        via <strong> <?= $_POST['email'] ?></strong>.
+        via <strong> <?= $formData['email'] ?></strong>.
     </p>
     <p>
-        <a class="back-to-main" href = "/index.php">BACK TO MAIN SITE</a>
+        <a class="back-to-main" href = "../public/index.php">BACK TO MAIN SITE</a>
     </p>
 </section>
 </body>
