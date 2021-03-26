@@ -9,31 +9,36 @@
 
 
 .experience{
-    background-color: var(--background-light);
-    padding: var(--spacing);
+    background-color: rgba(0,95,185,255);
+    
 }
 
 
 
 .experience h2 {
     font-family: var(--font-titles);
-    color: var(--font-medium);
+    color: var(--font-light);
     font-size: var(--fontSize-title-others);
     letter-spacing: var(--spacing-letters-titles);
 }
 
 
 
-.experience .intro-container{
+/*.experience .intro-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     margin: 50px;
-}
+}*/
 
 .experience .intro-paragraph {
-    width: 40%;
+    margin: auto;
+    width: 30%;
+    background-color:rgba(242,203,2,255) ;
+    border: 5px solid rgba(57,40,0,255);
+    
+    padding: var(--spacing8px);
 }
 /**********************************************/
 
