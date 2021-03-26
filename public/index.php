@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/png" href="images/Mario-icon.png" />
-    <title>Mario's Online CV</title>
+    <title>CV Mario</title>
 </head>
 <body>
     <header id="navHeader">
@@ -37,10 +37,8 @@
             <img class = "ImgMarioHalf" src= "images/mario_cache.png" alt="Mario_demi_tete">
         </div>
     </header>
-
-    <main>    
-<section class="experience" id="experience">
-    <div class="mainContainer">
+    <main>      
+        <section class="experience" id="experience">
             <div class="intro-container">
                 <h2>Experience</h2>
                 <p class="intro-paragraph">Je suis l'homme aux mille talents! Les gens me prennent souvent pour un simple plombier, mais ce qu'ils ne savent pas c'est que j'ai exercé une miltitudes d'autres professions!</p>
@@ -102,8 +100,6 @@
                 <p><img src="images/skills/Mariodab.png" alt="Mario dab" class ="mariodab"></p>
             </div>
             <div class="card-container">
-            <div class="test">
-
                 <div class="card">
                     <div class="imgTitre">
                         <img class="icon" src="images/skills/fiveblue.png" alt="Mario Tennis">
