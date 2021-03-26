@@ -5,18 +5,6 @@
   min-height: 400px;
 }
 
-.hobbies h2 {
-  background-image: url("../../images/icons/backgroundBlockGood.png");
-  color: var(--font-light);
-  font-family: "mario";
-  font-size: var(--fontSize-title-others);
-  letter-spacing: var(--spacing-letters-titles);
-  border: 5px outset #1C6EA4;
-  border-radius: 40px;
-  text-align: center;
-  margin-right: auto;
-  padding: 10px;
-}
 
 .holidays{
   background-image: url("../../images/icons/background.png");

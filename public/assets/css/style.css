@@ -44,6 +44,7 @@
     /*spacing*/
     --spacing: 8px;
     --borderSolid: solid 3px;
+    --marginSection: 64px;
 }
 
 *{
@@ -57,14 +58,7 @@ body{
     /*padding: 0 calc(var(--spacing)*16);*/
     background-color: rgba(0,95,185,255)
 }
-.mainContainer{
-    max-width: 75%;
-    margin: auto;
-    background-color: rgba(0, 0, 0, 0.5) ;
-    border: 5px solid rgba(57,40,0,255);
-    
-    border-radius: 20px;
-}
+
 
 h2{
     font-family: var(--font-titles);
@@ -90,4 +84,30 @@ figcaption, p {
 
 p{
     font-size: 1.17em;
+}
+
+
+
+section{
+   
+    margin: auto;
+    margin-top:var(--marginSection);
+    margin-bottom:var(--marginSection);
+
+    height: 100%;
+    width: 90%;
+    text-align: left;
+
+}
+
+
+
+
+.mainContainer{
+   
+    
+    background-color: rgba(0, 0, 0, 0.5) ;
+    border: 5px solid rgba(57,40,0,255);
+    
+    border-radius: 20px;
 }
