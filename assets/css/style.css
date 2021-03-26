@@ -56,7 +56,7 @@
 
 body{
     /*padding: 0 calc(var(--spacing)*16);*/
-    background-color: var(--background-light);
+    background-color: rgba(0,95,185,255)
 }
 .mainContainer{
     max-width: 75%;

@@ -21,6 +21,7 @@
 }
 .skills h2{
     color :var(--font-light);
+    margin-left: 250px;
 }
 
 .marioDubTitre{
