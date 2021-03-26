@@ -4,7 +4,7 @@
     min-height: 400px;
 }
 
-.langages > h2{
+/*.langages > h2{
     background-image: url("../../images/icons/backgroundBlockGood.png");
     color: var(--font-light);
     font-size: var(--fontSize-title-others);
@@ -15,16 +15,16 @@
     margin-right: auto;
     padding: 10px;
     font-family: "mario";
-}
+}*/
 
 .towns{
     background-image: url("../../images/icons/background.png");
 }
 
-.langages p{
+/*.langages p{
     font-size: 1.4em;
 
-}
+}*/
 
 .flagsCards{
     display: flex;
