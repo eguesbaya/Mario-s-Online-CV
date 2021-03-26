@@ -17,6 +17,7 @@ h1{
 
 .form-body{
     background-image: url("../../images/footer/mario-background-sans-nuages.png");
+    background-size: contain;
     display:flex;
     align-items: start;
     padding: 0 calc(var(--spacing)*3);
