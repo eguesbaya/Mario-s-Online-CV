@@ -20,11 +20,11 @@ body{
     overflow-x: hidden;
 }
 
-footer h2{
+/*footer h2{
     color: #f3bda5;
     margin-left: 14%;
     text-shadow: 2px 1px 1px black;
-}
+}*/
 
 .contact{
     display: flex;
@@ -43,7 +43,7 @@ footer h2{
     flex-direction: column;
 }
 
-.contact .body-form label{
+/*.contact .body-form label{
     padding-left: 15px;
     padding-bottom: 5px;
     font-family: var(--font-titles);
@@ -52,13 +52,14 @@ footer h2{
     text-transform: uppercase;
     color: #f3bda5;
     text-shadow: 2px 1px 1px black;
-}
+}*/
 
 .contact .body-form input,  .body-form textarea{
     margin-bottom: var(--spacing);
     padding: 6px;
     background-color: var(--background-light);
     border-radius: 10px;
+    color: var(--font-medium);
 }
 
 .contact .body-form .submit{

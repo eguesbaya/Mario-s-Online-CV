@@ -5,12 +5,20 @@
   min-height: 400px;
 }
 
+/*.hobbies h2 {
+  background-image: url("../../images/icons/backgroundBlockGood.png");
+  color: var(--font-light);
+  font-family: "mario";
+  font-size: var(--fontSize-title-others);
+  letter-spacing: var(--spacing-letters-titles);
+  border: 5px outset #1C6EA4;
+  border-radius: 40px;
+  text-align: center;
+  margin-right: auto;
+  padding: 10px;
+}*/
 
-.holidays{
-  background-image: url("../../images/icons/background.png");
-}
-
-.marioRacoon{
+/*.marioRacoon{
     position:relative;
     top: -20px;
     left: 0;
@@ -34,10 +42,9 @@
   35% {top: -20px}
   100% {top: -20px}
 }
+*/
 
-
-
-.right p{
+/*.right p{
     font-family:'Roboto Condensed';
     letter-spacing: var(--spacing-letters-titles);
     color: var(--font-light);
@@ -48,7 +55,7 @@
     margin-right: auto;
     padding: 5px;
     box-shadow:inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
-}
+}*/
 
 .hobbies img {
   margin: var(--spacing8px);
@@ -60,13 +67,13 @@
   margin-top: 0;
 }
 
-.hobbies .card h3{
+/*.hobbies .card h3{
   font-family: var(--font-titles);
   color: var(--font-medium);
   letter-spacing: var(--spacing-letters-titles);
   font-size: calc(var(--fontSize-title-others)*0.7);
- /* padding: var( --spacing8px);*/
-}
+ /* padding: var( --spacing8px);
+}*/
 
 .backgroundBlocks{
     background-image: url("../../images/icons/backgroundBlockGood.png");

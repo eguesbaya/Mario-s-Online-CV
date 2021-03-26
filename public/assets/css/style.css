@@ -62,29 +62,46 @@ body{
 
 h2{
     font-family: var(--font-titles);
-    font-size: var(--fontSize-title-others);
-    letter-spacing: var(--spacing);
+    font-size: calc(var(--fontSize-title-others)*2);
+    color: var(--font-light);
+    letter-spacing: var(--spacing-letters-titles);
     text-transform: uppercase;
-    color: var(--font-medium);
-    padding: calc(var(--spacing) * 3);
-    margin-left: 2%;
-    margin-top: calc(var(--spacing) * 3);
+    padding: var(--spacing);
+    margin: calc(var(--spacing) * 2);
+    max-width: 100%;
 }
 
-h3{
+h3, figcaption, label{
     font-family: var(--font-titles);
     color: var(--font-medium);
     text-transform: uppercase;
     font-size: var(--fontSize-title-others);
+    padding: var(--spacing);
+    margin: calc(var(--spacing) * 2);
+    max-width: 100%;
 }
 
-figcaption, p {
-    color: var(--font-medium);
+p, input, textarea {
+    color: var(--font-light);
+    font-family: var(--font-others);
+    text-align: left;
+    padding: var(--spacing);
+    margin: calc(var(--spacing) * 2);
+    max-width: 100%;
+    font-size: var(--fontSize-title-others);
 }
 
-p{
-    font-size: 1.17em;
+label{
+    /*padding-left: 15px;
+    padding-bottom: 5px;
+    font-family: var(--font-titles);*/
+    /*font-size: 0.8em;*/
+    /*letter-spacing: var(-spacing);
+    text-transform: uppercase;*/
+    color: var(--font-light);
+    /*text-shadow: 2px 1px 1px black;*/
 }
+
 
 
 
@@ -101,8 +118,6 @@ section{
 }
 
 
-
-
 .mainContainer{
    
     
@@ -117,3 +132,47 @@ section{
     width: 100%;
     }
 }
+
+.holidays{
+  background-image: url("../../images/icons/background.png");
+  padding:2.2%;
+  border-top: 5px outset #1C6EA4;
+  border-bottom: 5px outset #1C6EA4;
+}
+
+.marioRacoon{
+    position:relative;
+    top: -20px;
+    left: 0;
+    animation-name: drive, mario-jump;
+    animation-duration: 5s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 0;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes drive {
+  from { transform: translateX(-200px)}
+  to { transform: translateX(2000px)}
+}
+
+@keyframes mario-jump {
+  0% {top: -20px}
+  30% {top: -50px}
+  35% {top: -20px}
+  100% {top: -20px}
+}
+
+/*Mobile version*/
+@media screen and (min-width: 360px) and (max-width:688px){
+    h2{
+        font-size: calc(var(--fontSize-title-others)*1);
+    }
+
+    h3, p, figcaption, label, input, textarea{
+        font-size: calc(var(--fontSize-title-others)*0.8);
+    }
+}
+
