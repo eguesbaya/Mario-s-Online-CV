@@ -50,7 +50,8 @@ body{
     font-size: 0.8em;
     letter-spacing: var(-spacing);
     text-transform: uppercase;
-    color: #f3bda5;
+    /*color: #f3bda5;*/
+    color: white;
     text-shadow: 2px 1px 1px black;
 }*/
 

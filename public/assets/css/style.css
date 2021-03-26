@@ -24,11 +24,14 @@
     /*Variables: font colors*/
     --font-light: rgba(230,229,238,255);
     --font-medium: rgba(0,41,152,255);
+    --font-blue:rgba(0,95,185,255);
     --font-dark: rgba(21,7,3,255);
 
     /*Variables: background colors*/
     --background-red: rgba(255,0,0,255);
     --background-yellow: rgba(228,163,0,255);
+    --background-blue: rgba(0,95,185,255);
+    --background-darkblue:rgba(0, 0, 0, 0.5);
     --background-light: rgba(230,229,238,255);
 
     /*Variables: font style*/
@@ -57,6 +60,14 @@
 body{
     /*padding: 0 calc(var(--spacing)*16);*/
     background-color: rgba(0,95,185,255)
+}
+
+.mainContainer{
+    max-width: 75%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5) ;
+    border: 5px solid rgba(57,40,0,255);
+    border-radius: 0px;
 }
 
 

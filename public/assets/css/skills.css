@@ -49,7 +49,18 @@
 
     
 
-
+ .test{
+    height: 100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+    max-width: 75%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5) ;
+    border: 5px solid rgba(57,40,0,255);
+    
+ }
 
  
  @media screen and (max-width: 1590px) {
