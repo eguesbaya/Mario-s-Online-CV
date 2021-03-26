@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=
     , initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/thanks.css">
-    <title>Mario's Online CV</title>
+    <link rel="icon" type="image/png" href="images/Mario-icon.png" />
+    <title>CV Mario</title>
 </head>
 
 <body class="form-body">
@@ -14,18 +15,15 @@
     
     <section class="form-message">
 
-    <h1> merci <?php echo $_POST['firstname'] . " !" ?></h1>
+    <h1> merci <?= $_POST['firstname'] . " !" ?></h1>
 
     <p class="form-p">J'ai bien reçu ton message. Mes fidèles secrétaires champignons reviendront vers toi dans les plus brefs délais
-        via <strong> <?php echo $_POST['email'] ?></strong>.
+        via <strong> <?= $_POST['email'] ?></strong>.
     </p>
-    
     <p>
         <a class="back-to-main" href = "/index.php">BACK TO MAIN SITE</a>
-</p>
-
+    </p>
 </section>
-    
 </body>
 </html>
 <?php
