@@ -14,12 +14,12 @@
 }
 
 
-.experience h2 {
+/*.experience h2 {
     font-family: var(--font-titles);
     color: var(--font-light);
     font-size: var(--fontSize-title-others);
     letter-spacing: var(--spacing-letters-titles);
-}
+}*/
 
 
 
@@ -31,7 +31,7 @@
     margin: 50px;
 }*/
 
-.experience .intro-paragraph {
+/*.experience .intro-paragraph {
     margin: auto;
     width: 30%;
     background-color:rgba(242,203,2,255) ;
