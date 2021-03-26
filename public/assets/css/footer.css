@@ -1,19 +1,19 @@
 footer {
     width: 100%;
-    height: 50vh;
+    height: 500px;
     display: flex;
     justify-content: space-around;
 
-    background-image: url("../../public/images/footer/mario-background.jpg");
+    background-image: url("../../images/footer/mario-background-sans-nuages.png");
     background-size: contain;
 
     --cube-spacing: 52px;
     --cube-bottom: 40%;
-    --cube-starting: 44%;
+    --cube-starting: 40%;
     --cube-z-index: 0;
     --logo-sapcing: 52px;
     --logo-starting: calc((var(--cube-starting) + 10.5px) + var(--logo-sapcing));
-    --logo-bottom: calc(var(--cube-bottom) + 13%);
+    --logo-bottom: calc(var(--cube-bottom) + 60px);
 }
 
 body{
@@ -21,8 +21,9 @@ body{
 }
 
 footer h2{
-    color: var(--font-light);
-    margin-top: 5%;
+    color: #f3bda5;
+    margin-left: 14%;
+    text-shadow: 2px 1px 1px black;
 }
 
 .contact{
@@ -32,9 +33,9 @@ footer h2{
 }
 
 .contact-form{
-    top: 2%;
-    left: 15%;
+    left: 13%;
     z-index: 100;
+    top: 100px;
 }
 
 .contact .body-form{
@@ -49,14 +50,24 @@ footer h2{
     font-size: 0.8em;
     letter-spacing: var(-spacing);
     text-transform: uppercase;
-    color: var(--font-light);
+    color: #f3bda5;
+    text-shadow: 2px 1px 1px black;
 }
 
 .contact .body-form input,  .body-form textarea{
     margin-bottom: var(--spacing);
-    padding: var(--spacing);
+    padding: 6px;
     background-color: var(--background-light);
-    border-radius: 20px;
+    border-radius: 10px;
+}
+
+.contact .body-form .submit{
+    background-color: #a85833;
+}
+
+.body-form textarea{
+    height: 100px;
+    width: 300px;
 }
 
 .return{
@@ -151,12 +162,6 @@ footer h2{
     bottom: var(--logo-bottom);
 }
 
-.koopa{
-    height: 80px;
-    bottom: 9.5%;
-    left: 45%
-}
-
 .tuyau{
     width: 80px;
 }
@@ -165,72 +170,102 @@ footer h2{
     transform: rotate(90deg);
     bottom: 10%;
     left: 0;
+    z-index: 1;
 }
 
 .t1-1{
     top: 0;
-    left: 50%;
+    left: calc(var(--cube-starting) + 121px);
     z-index: 10;
 }
 
 .t1-2{
-    left: 50.5%;
+    left: calc((var(--cube-starting) + 121px) + 10px);
     top: 16%;
     width: 60px;
     animation: carnivore 1.5s alternate-reverse infinite;
 }
 
-.obus{
-    display: none;
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    bottom: 25%;
-    left: -30vmin;
-    animation: leftToRight 10s infinite;
+.mario-stage-end{
+    right: 21%;
+    bottom: 9%;
+}
+
+.mario-pole{
+    height: 80%;
     z-index: 90;
 }
 
-.mario-stage-end{
-    height: 25%;
-    right: 10%;
+.mario-end{
+    bottom: 20%;
+    height: 24.5%;
+    z-index: 91;
+    animation: mario-finish 3s alternate infinite;
+}
+
+.door{
+    right: 0;
     bottom: 9%;
-    z-index: 100;
+    width: 130px;
 }
 
-.btn-header{
-    position: absolute;
-    width: 70px;
-    bottom: 40%;
-    right: 5%;
-    z-index: 10;
-    animation: heart 0.5s infinite alternate;
+.arrow{
+    width: 55px;
+    right: 39px;
+    bottom: 9%;
+    animation: arrowUpAndDown 2s infinite;
+    opacity: 0.6;
 }
 
-.label-end{
-    opacity: 0;
+.carapace{
     visibility: hidden;
-    position: absolute;
-    bottom: 59%;
-    font-family: var(--font-titles);
-    font-size: 0.8em;
-    letter-spacing: var(-spacing);
-    text-transform: uppercase;
-    color: var(--font-light);
-    right: 2.5%;
-    z-index: 10;
-    transition: visibility 0s, opacity 0.5s linear;
+    width: 60px;
+    transform: scaleX(-1);
+    bottom: 10%;
+    left: 0;
+    z-index: 0;
 }
 
-.return-up:hover .label-end{
-    opacity: 1;
-    visibility: visible;
+.carapace-move{
+    animation: carapaceMove 3s ease-in-out;
 }
 
-@keyframes leftToRight{
+@keyframes carapaceMove{
+    0%{
+        visibility: visible;
+        left: 0;
+        bottom: 12%;
+    }
+
+    18%{
+        bottom: 10%;
+    }
+
+    50%{
+        left: 70%
+    }
+
+    77%{ 
+        bottom: 10%;
+    }
+    78%{
+        bottom: 12%;
+    }
+
     100%{
-        left: 150%;
-        display: none; 
+        left: -50%;
+    }
+}
+
+@keyframes arrowUpAndDown{
+    100%{
+        bottom: 28%;
+    }
+}
+
+@keyframes mario-finish{
+    100%{
+        bottom: 50%;
     }
 }
 
@@ -255,48 +290,98 @@ footer h2{
     }
 }
 
-@keyframes heart{
-	100% { 
-        transform: scale(1.2); 
+
+
+@media screen and (max-width: 1279px){
+
+    .objet{
+        --cube-spacing: 35px;
+        --cube-bottom: 100px;
+        --cube-starting: 53%;
+        --logo-sapcing: 41px;
+        --logo-starting: calc(var(--cube-starting) + 45px);
+        --logo-bottom: var(--cube-bottom);
     }
-}
 
-@media screen and (max-width: 2000px){
+    .t1-1, .t1-2{
+        display: none;
+    }
 
+    .cube{
+        width: 40px;
+        height: 40px;
+        z-index: 10;
+
+        left: var(--cube-starting);
     
-    footer {
-        height: 75vh;
-        width: 100%;
-
-        --cube-starting: 42%;
+    }
+    
+    .c1{
+        bottom: var(--cube-bottom);
+    }
+    
+    .c2{
+        bottom: calc(var(--cube-bottom) + var(--cube-spacing));
+    }
+    
+    .c3{
+        bottom: calc(var(--cube-bottom) + (var(--cube-spacing)*2));
+    }
+    
+    .c4{
+        bottom: calc(var(--cube-bottom) + (var(--cube-spacing)*3));
+    }
+    
+    .c5{
+        bottom: calc(var(--cube-bottom) + (var(--cube-spacing)*4));
+    }
+    
+    .c6{
+        bottom: calc(var(--cube-bottom) + (var(--cube-spacing)*5));
     }
 
-    .t1-2{
-        left: 50.8%;
+    .logo{
+        width: 29px;
+        height: 29px;
+        z-index: 10;
+        animation: Rotate 5s infinite;
+
+        left: var(--logo-starting);
+    }
+    
+    .logo:hover{
+        animation: bond 0.1s;
+    }
+    
+    .l1{
+        bottom: calc(var(--cube-bottom) + var(--logo-sapcing));
     }
 
-    .mario-stage-end{
-        right: 15%;
+    .l2{
+        bottom: calc(var(--cube-bottom) + var(--logo-sapcing) + 35px);
     }
 
-    .btn-header{
-        position: absolute;
-        bottom: 65%;
-        right: 4%;
+    .l3{
+        bottom: calc(var(--cube-bottom) + var(--logo-sapcing) + 70px);
     }
 
-    .label-end{
-        bottom: 85%;
-        right: 1.5%;
+    .l4{
+        bottom: calc(var(--cube-bottom) + var(--logo-sapcing) + 105px);
     }
 
-    .contact-form{
-        left: 22%;
+    @keyframes bond {
+        50%{
+            left: calc(var(--logo-starting) + 2%);
+        }
+        100%{
+            left: var(--logo-starting);
+        }
     }
 
 }
 
-@media screen and (max-width: 600px){
+
+@media screen and (max-width: 800px){
 
     .block-absolute, .block-relative{
         position: static;
@@ -307,21 +392,31 @@ footer h2{
     }
 
     .logo{
+        width: 7%;
+        height: 7%;
         display: flex;
         position: absolute;
-        bottom: 2%;
+        bottom: 12%;
     }
 
     footer {
+        height: 550px;
         position: relative;
-        height: 85vh;
-        background-size: cover;
         justify-content: center;
+        text-align: center;
         width: 100%;
     }
 
-    footer h2{
-        margin: 0;
+    footer h2 {
+        position: static;
+        margin-left: 0;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    .contact .body-form label{
+        padding-left: 0px;
+
     }
 
     .l1, .l2, .l3, .l4{
@@ -344,7 +439,8 @@ footer h2{
         display: block;
         position: absolute;
         top: 6%;
-        width: 14%;
+        width: 14%;    
+        bottom: 9%;
     }
 
     .label-end{
@@ -356,4 +452,10 @@ footer h2{
         font-size: 0.6em;
     }
 
+}
+
+@media screen and (max-width: 670px){
+    footer{
+        background-size: cover;
+    }
 }

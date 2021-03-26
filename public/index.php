@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/png" href="images/Mario-icon.png" />
-    <title>Mario's Online CV</title>
+    <title>CV Mario</title>
 </head>
 <body>
     <header id="navHeader">
@@ -37,10 +37,8 @@
             <img class = "ImgMarioHalf" src= "images/mario_cache.png" alt="Mario_demi_tete">
         </div>
     </header>
-
-    <main>    
-<section class="experience" id="experience">
-    <div class="mainContainer">
+    <main>      
+        <section class="experience" id="experience">
             <div class="intro-container">
                 <h2>Experience</h2>
                 <p class="intro-paragraph">Je suis l'homme aux mille talents! Les gens me prennent souvent pour un simple plombier, mais ce qu'ils ne savent pas c'est que j'ai exercé une miltitudes d'autres professions!</p>
@@ -102,8 +100,6 @@
                 <p><img src="images/skills/Mariodab.png" alt="Mario dab" class ="mariodab"></p>
             </div>
             <div class="card-container">
-            <div class="test">
-
                 <div class="card">
                     <div class="imgTitre">
                         <img class="icon" src="images/skills/fiveblue.png" alt="Mario Tennis">
@@ -134,7 +130,7 @@
                 </div>
                 <div class="card">
                     <div class="imgTitre">
-                        <img class="icon" src="images/skills/hundredblue.png" alt="Mario Tennis">
+                        <img class="icon" src="images/skills//hundredblue.png" alt="Mario Tennis">
                         <h3>Optimisme</h3>
                     </div>
                     <div class = "textCard">
@@ -145,18 +141,13 @@
         </section>
         <section class="langages" id="langages">
             <h2>Langues </h2>
-
-            <div class=towns>
-                <img class="marioRacoon" src="images/icons/Racoon_Mario_24649.ico"/>
-            </div>
-
             <div class="flagsCards">
                 <div class="card">
                     <figure class="flag">
                         <img class="flag-img" src="https://flagpedia.net/data/flags/w580/fr.png" alt="French Flag">
                         <img class="mario-head-flag" src="images/marioHeadFlags.png" alt="mario head">
                         <figcaption>
-                          <h3>Francais</h3>
+                          <h3>Francais></h3>
                         </figcaption>
                     </figure>
                     <p>C'est parti !!!</p>
@@ -212,34 +203,28 @@
                     <p>Vamos !!!</p>
                 </div>
             </div>
-
-
-            
         </section>
         <section class="hobbies" id="hobbies">
-        <br /><br />
+            <br /><br />
             <h2>Loisirs</h2>
-        <br /><br />
-
-        <div class=holidays>
-            <img class="marioRacoon" src="images/icons/Racoon_Mario_24649.ico"/>
-        </div>
-
-        <div class="right">
-          <br />
-          <p>
-            Mario sauve régulièrement la princesse Peach dans le royaume des
-            champignons et combats les méchants!
+            <br /><br />
+            <div class="left">
+            <p>LES HOBBIES</p>
+            </div>
+            <div class="right">
             <br />
-            Pour se détendre il fait beaucoup de sports comme des courses de
-            Kart.
+            <p>
+                Mario sauve régulièrement la princesse Peach dans le royaume des
+                champignons et combats les méchants!
+                <br /><br />
+                Pour se détendre il fait beaucoup de sports comme des courses de
+                Kart.
+                <br /><br />
+                Un peu de bricolage pour la créativité, Mario a plus d'une corde à
+                son arc!
+            </p>
+            </div>
             <br />
-            Un peu de bricolage pour la créativité, Mario a plus d'une corde à
-            son arc!
-          </p>
-        </div>
-
-        <br />
             <div class="card-container">
                 <div class="card">
                     <div class="imgTitre">
@@ -247,7 +232,7 @@
                         <h3>Sauveur de Princesse</h3>
                     </div>
                     <div class = "textCard">
-                        <p>Être un gentleman n’est pas qu’un hobbie, c’est une philosophie! Je ne me lasse jamais de sauver la princesse Peach, qui se fait régulièrement kidnapper par Bowser.</p>
+                        <p>Être un gentleman n’est pas qu’un hobbie, c’est une philosphie! Je ne me lasse jamais de sauver la princesse Peach, qui se fait régulièrement kidnapper par Bowser.</p>
                     </div>
                 </div>
                 <div class="card">
@@ -297,11 +282,9 @@
                         </p>
                     </div>
                 </div>
-                <div class="backgroundBlocks"></div>
             </div>
         </section>
     </main>
-
     <footer>
         <div class="decor block-relative">
             <h2>Contact </h2>

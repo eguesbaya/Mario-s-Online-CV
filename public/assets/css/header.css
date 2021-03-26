@@ -1,6 +1,6 @@
 header{
     width: 100%;
-    background-image: url('../../public/images/footer/mario-background_cropped_nocloud.png');
+    background-image: url('../../images/footer/mario-background_cropped_nocloud.png');
     background-size: auto 100%;
 }
 
@@ -27,7 +27,6 @@ header{
     background-color: var( --font-light);
     color: var( --font-medium);
     font-family: var(--font-titles) ;
-    /*background-color: var(--background-light);*/
 }
 
 .mobile-nav{
@@ -45,7 +44,7 @@ header{
 }
 
 .title-logo{
-    width: 75%;
+    width: 50%;
 }
 
 .ImgMarioHalf{
@@ -84,11 +83,6 @@ header{
 /*Mobile version*/
 @media screen and (min-width: 360px) and (max-width: 640px){
 
-    .presentation h1{
-        font-size: calc(var(--fontSize-title) - 4em);
-        color: var( --font-light);
-    }
-
    .full-screen-menu{
         display:none;
     }
@@ -96,7 +90,7 @@ header{
     .mobile-nav{
         display:block;
         text-align: center;
-        padding: var(--spacing); /*multiply by 3*/
+        padding-top: var(--spacing); /*multiply by 3*/
     }
 
     #mobile-menu {
@@ -130,6 +124,10 @@ header{
         transform-origin: center;
         filter:drop-shadow(5px 5px 4px black);
 
+    }
+
+    .title-logo{
+        width: 75%;
     }
 
     /* Heart beat animation */

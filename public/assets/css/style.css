@@ -8,7 +8,7 @@
 @import 'cards.css';
 @font-face{
     font-family: "mario";
-    src: url("../../public/fonts/SuperMarioBrothers-4nmp.ttf");
+    src: url("../../fonts/SuperMarioBrothers-4nmp.ttf");
 }
 
 @font-face {
@@ -50,20 +50,20 @@
 	box-sizing: border-box;
     margin: 0;
     padding: 0;
-    cursor: url('../../public/images/cursor_mario.png'), pointer;
+    cursor: url('../../images/cursor_mario2.png'),  pointer;
 }
 
 body{
     /*padding: 0 calc(var(--spacing)*16);*/
-    background-color: var(--background-light);
+    background-color: rgba(0,95,185,255)
 }
-
-h1{
-    font-family: var(--font-titles) ;
-    font-size: calc(var(--fontSize-title) - 2em);
-    color: var( --font-light);
-    letter-spacing:var(--spacing-letters-titles);
-    margin-top: 60px; /*Multiplier la variable "spacing" ne fonctionnait pas*/
+.mainContainer{
+    max-width: 75%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5) ;
+    border: 5px solid rgba(57,40,0,255);
+    
+    border-radius: 20px;
 }
 
 h2{
@@ -90,14 +90,4 @@ figcaption, p {
 
 p{
     font-size: 1.17em;
-}
-
-
-@media screen and (max-width: 360px){
-    h2{
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        width: 100%;
-    }
 }

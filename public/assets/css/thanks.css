@@ -1,0 +1,68 @@
+@import "style.css";
+
+h1{
+    font-family: var(--font-titles) ;
+    font-size: calc(var(--fontSize-title) - 2em);
+    color: var( --font-light);
+    letter-spacing:var(--spacing-letters-titles);
+    margin: calc(var(--spacing)*3) var(--spacing);
+}
+
+.form-p{
+    color: var(--font-light);
+    margin: calc(var(--spacing)*5) 0;
+}
+
+
+
+.form-body{
+    background-image: url("../../images/footer/mario-background-sans-nuages.png");
+    background-size: contain;
+    display:flex;
+    align-items: start;
+    padding: 0 calc(var(--spacing)*3);
+    max-width: 100%;
+
+}
+
+.form-message{
+    max-width:100%;
+
+}
+
+.toad{
+    max-width: 100%;
+    min-width: 50%;
+}
+
+.back-to-main{
+    text-decoration:none; 
+    border: var(--borderSolid);  
+    color: var( --font-light);
+    font-family: var(--font-titles) ;
+    font-size:1.3em;
+    padding: 10px;
+    border-radius: 10px;
+    margin: calc(var(--spacing)*5) 0;
+}
+
+.back-to-main:hover{
+    text-decoration:none;   
+    background-color: var( --font-light);
+    color: var( --font-medium);
+    font-family: var(--font-titles) ;
+}
+
+
+@media screen and (min-width: 360px) and (max-width: 640px){
+    .form-body{
+        flex-direction:column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1{
+        font-size: 30px;
+        width: 100%;
+    }
+}

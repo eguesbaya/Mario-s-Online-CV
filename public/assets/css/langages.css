@@ -5,7 +5,7 @@
 }
 
 .langages > h2{
-    background-image: url(../../public/images/icons/backgroundBlockGood.png);
+    background-image: url("../../images/icons/backgroundBlockGood.png");
     color: var(--font-light);
     font-size: var(--fontSize-title-others);
     letter-spacing: var(--spacing-letters-titles);
@@ -18,8 +18,7 @@
 }
 
 .towns{
-    background-image: url(../../public/images/icons/background.png);
-
+    background-image: url("../../images/icons/background.png");
 }
 
 .langages p{
