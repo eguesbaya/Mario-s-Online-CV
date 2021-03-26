@@ -16,7 +16,7 @@
 
 .experience h2 {
     font-family: var(--font-titles);
-    color: var(--font-light);
+    color:white;
     font-size: var(--fontSize-title-others);
     letter-spacing: var(--spacing-letters-titles);
 }
@@ -34,10 +34,11 @@
 .experience .intro-paragraph {
     margin: auto;
     width: 30%;
-    background-color:rgba(242,203,2,255) ;
+    background-color: rgb(243,204,4);
     border: 5px solid rgba(57,40,0,255);
     
     padding: var(--spacing8px);
+    display: none;
 }
 /**********************************************/
 

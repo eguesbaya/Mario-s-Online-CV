@@ -21,7 +21,8 @@ body{
 }
 
 footer h2{
-    color: #f3bda5;
+   /*color: #f3bda5;*/
+    color: white;
     margin-left: 14%;
     text-shadow: 2px 1px 1px black;
 }
@@ -50,7 +51,8 @@ footer h2{
     font-size: 0.8em;
     letter-spacing: var(-spacing);
     text-transform: uppercase;
-    color: #f3bda5;
+    /*color: #f3bda5;*/
+    color: white;
     text-shadow: 2px 1px 1px black;
 }
 
