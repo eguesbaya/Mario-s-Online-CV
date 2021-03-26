@@ -1,0 +1,95 @@
+/*Section 5:Hobbies (Nicolas)*/
+.hobbies {
+  font-family: "Roboto Condensed";
+  background-color: rgba(0,95,185,255);
+  min-height: 400px;
+}
+
+.hobbies h2 {
+  background-image: url("../../images/icons/backgroundBlockGood.png");
+  color: var(--font-light);
+  font-family: "mario";
+  font-size: var(--fontSize-title-others);
+  letter-spacing: var(--spacing-letters-titles);
+  border: 5px outset #1C6EA4;
+  border-radius: 40px;
+  text-align: center;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.holidays{
+  background-image: url("../../images/icons/background.png");
+}
+
+.marioRacoon{
+    position:relative;
+    top: -20px;
+    left: 0;
+    animation-name: drive, mario-jump;
+    animation-duration: 5s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 0;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes drive {
+  from { transform: translateX(-200px)}
+  to { transform: translateX(2000px)}
+}
+
+@keyframes mario-jump {
+  0% {top: -20px}
+  30% {top: -50px}
+  35% {top: -20px}
+  100% {top: -20px}
+}
+
+
+
+.right p{
+    font-family:'Roboto Condensed';
+    letter-spacing: var(--spacing-letters-titles);
+    color: var(--font-light);
+    border: 5px outset #1C6EA4;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 1.2em; 
+    margin-right: auto;
+    padding: 5px;
+    box-shadow:inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.hobbies img {
+  margin: var(--spacing8px);
+  height: var(--imgHeight);
+  width: 300px;
+  height: 200px;
+  object-fit: contain;
+  margin: 16px;
+  margin-top: 0;
+}
+
+.hobbies .card h3{
+  font-family: var(--font-titles);
+  color: var(--font-medium);
+  letter-spacing: var(--spacing-letters-titles);
+  font-size: calc(var(--fontSize-title-others)*0.7);
+ /* padding: var( --spacing8px);*/
+}
+
+.backgroundBlocks{
+    background-image: url("../../images/icons/backgroundBlockGood.png");
+    height: 50px;
+    width: 2550px;
+    font-family:'Roboto Condensed';
+    letter-spacing: var(--spacing-letters-titles);
+    color: var(--font-light);
+    border: 5px outset #1C6EA4;
+    border-radius: 40px;
+    font-size: 1.2em; 
+    margin-right: auto;
+    padding: 5px;
+}
