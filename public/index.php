@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Mario's Online CV</title>
   </head>
   <body>
@@ -42,7 +42,7 @@
     
         <section class = "presentation" id="presentation">
                 <!--<h1>mario bros</h1>-->
-                <img class="title-logo" src='../public/images/super_mario_logo.png' alt="super mario">
+                <img class="title-logo" src='images/super_mario_logo.png' alt="super mario">
                 <img class = "ImgMarioHalf" src= "images/mario_cache.png" alt="Mario_demi_tete">
         </section>
     </header>
@@ -322,11 +322,10 @@
     <footer>
         <div class="decor block-relative">
             <h2>Contact </h2>
-            <img class="objet obus block-absolute return" src="images/footer/bombe.png" alt="obus">
-            
-            <img class="objet block-absolute tuyau t1" src="images/footer/tuyau-green.png" alt="tuyau">
 
-            <img class="objet block-absolute return koopa" src="images/footer/koopa.png" alt="Koopa">
+            <img class="objet block-absolute tuyau t1" src="images/footer/tuyau-green.png" alt="tuyau">
+            
+            <img class="objet block-absolute carapace" src="images/footer/carapace.png" alt="tuyau">
             
             <img class="objet block-absolute tuyau t1-1 inverse" src="images/footer/tuyau-green.png" alt="tuyau">
             
@@ -352,7 +351,7 @@
                     <img class="objet logo block-absolute l2" src="images/footer/github.png" alt="First project @WildCodeSchool - Mario's online CV"/>
                 </a>
                 <a href="https://twitter.com/supermario_fra?lang=fr" target="_blank" title="Twitter">
-                    <img class="objet logo block-absolute l3" src="images/footer/twitter.png" alt="First project @WildCodeSchool - Mario's online CV"/>
+                    <img class="objet logo block-absolute l3" src="images/footer/twitter2.png" alt="First project @WildCodeSchool - Mario's online CV"/>
                 </a>
                 <a href="https://www.facebook.com/SuperMarioFR" target="_blank" title="Facebook">
                     <img class="objet logo block-absolute l4" src="images/footer/facebook.png" alt="First project @WildCodeSchool - Mario's online CV"/>
@@ -360,7 +359,8 @@
             </div>
             <div class="contact" id="contact">
 
-                <form class="contact-form block-absolute" action="#contact" method="POST" >
+                <form class="contact-form block-absolute" action="thanks.php" method="POST" >
+    
                     <div class="body-form">
                         <label for="lastname">NOM</label>
                         <input type="text" name="lastname" id="lastname" placeholder="Bross" required>
@@ -373,14 +373,15 @@
                         <input type="submit" value="Envoyer">
                     </div>
                 </form>
-            </div>  
-            <img class="objet block-absolute return mario-stage-end" src="images/footer/mario-jump.png" alt="mario-stage-end">
-            <a href="#navHeader" title="Retour au début du site" class="return-up">
-                <p class="label-end">Retour au debut du site</p>
-                <img id="cube-end" class="objet burger-menu-icon btn-header" src="images/icon_questionblock.png" alt="question block">
-            </a>
+            </div>
+            <img class="objet block-absolute return mario-stage-end mario-pole" src="images/footer/stage-end_pole.png" alt="mario-stage-end">
+            <img class="objet block-absolute return mario-stage-end mario-end" src="images/footer/stage-end_mario2.png" alt="">
+            <a href="#navHeader">
+                <img class="objet block-absolute door" src="images/footer/door2.png" alt="porte">
+                <img class="objet block-absolute arrow"src="images/footer/arrow.png" alt="fleche">
+            </a> 
         </div> 
     </footer>
-    <script src="../assets/js/index.js"></script>
+    <script src="assets/js/index.js"></script>
   </body>
 </html>

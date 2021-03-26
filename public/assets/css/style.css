@@ -59,14 +59,6 @@ body{
     background-color: var(--background-light);
 }
 
-h1{
-    font-family: var(--font-titles) ;
-    font-size: calc(var(--fontSize-title) - 2em);
-    color: var( --font-light);
-    letter-spacing:var(--spacing-letters-titles);
-    margin-top: 60px; /*Multiplier la variable "spacing" ne fonctionnait pas*/
-}
-
 h2{
     font-family: var(--font-titles);
     font-size: var(--fontSize-title-others);
