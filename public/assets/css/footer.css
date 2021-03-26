@@ -43,17 +43,15 @@ body{
     flex-direction: column;
 }
 
-/*.contact .body-form label{
+.contact .body-form label{
     padding-left: 15px;
     padding-bottom: 5px;
     font-family: var(--font-titles);
     font-size: 0.8em;
     letter-spacing: var(-spacing);
     text-transform: uppercase;
-    /*color: #f3bda5;*/
-    color: white;
     text-shadow: 2px 1px 1px black;
-}*/
+}
 
 .contact .body-form input,  .body-form textarea{
     margin-bottom: var(--spacing);
@@ -176,14 +174,14 @@ body{
 }
 
 .t1-1{
-    top: 0;
+    top: -13.8%;
     left: calc(var(--cube-starting) + 121px);
     z-index: 10;
 }
 
 .t1-2{
     left: calc((var(--cube-starting) + 121px) + 10px);
-    top: 16%;
+    top: -13.8%;
     width: 60px;
     animation: carnivore 1.5s alternate-reverse infinite;
 }

@@ -6,6 +6,8 @@
 @import 'contact.css';
 @import 'footer.css';
 @import 'cards.css';
+@import 'thanks.css';
+
 @font-face{
     font-family: "mario";
     src: url("../../fonts/SuperMarioBrothers-4nmp.ttf");
@@ -38,7 +40,7 @@
     --font-titles: "mario";
     --font-others: 'Roboto Condensed';
     --fontSize-title: 8em;
-    --fontSize-title-others: 1.8em;
+    --fontSize-title-others: 1.2em;
     
     --spacing-letters-titles: 0.3em;
     /*--fontSize-title: 6em;
@@ -66,8 +68,7 @@ body{
     max-width: 75%;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.5) ;
-    border: 5px solid rgba(57,40,0,255);
-    border-radius: 0px;
+    border: 5px solid rgba(57,40,0,255)
 }
 
 
@@ -82,17 +83,17 @@ h2{
     max-width: 100%;
 }
 
-h3, figcaption, label{
+h3, figcaption{
     font-family: var(--font-titles);
     color: var(--font-medium);
     text-transform: uppercase;
     font-size: var(--fontSize-title-others);
-    padding: var(--spacing);
-    margin: calc(var(--spacing) * 2);
+    /*padding: var(--spacing);*/
+    /*margin: calc(var(--spacing) * 2);*/
     max-width: 100%;
 }
 
-p, input, textarea {
+p{
     color: var(--font-light);
     font-family: var(--font-others);
     text-align: left;
@@ -128,15 +129,6 @@ section{
 
 }
 
-
-.mainContainer{
-   
-    
-    background-color: rgba(0, 0, 0, 0.5) ;
-    border: 5px solid rgba(57,40,0,255);
-    
-    border-radius: 20px;
-}
 
 @media screen and (max-width: 600px) {
     section{

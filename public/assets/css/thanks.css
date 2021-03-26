@@ -1,5 +1,3 @@
-@import "style.css";
-
 h1{
     font-family: var(--font-titles) ;
     font-size: calc(var(--fontSize-title) - 2em);

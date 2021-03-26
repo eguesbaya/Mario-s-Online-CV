@@ -22,24 +22,15 @@ foreach ($formData as $key => $value) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=
     , initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/thanks.css">
-    <link rel="icon" type="image/png" href="images/Mario-icon.png" />
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" type="image/png" href="../images/Mario-icon.png" />
     <title>CV Mario</title>
 </head>
 
 <body class="form-body">
-    <img class= "toad" src="images/footer/toad.png" alt="three mushrooms">
+    <img class= "toad" src="../images/footer/toad.png" alt="three mushrooms">
     
     <section class="form-message">
-
-    <?php if (!empty($errors)): ?>
-        <ul>
-        <?php foreach ($errors as $key => $message): ?>
-            <li>
-                <?php  ?>
-            </li>
-        </ul>
-
 
     <h1> merci <?= $formData['firstname'] . " " . $formData['lastname'] . " !" ?></h1>
 
@@ -47,10 +38,8 @@ foreach ($formData as $key => $value) {
         via <strong> <?= $formData['email'] ?></strong>.
     </p>
     <p>
-        <a class="back-to-main" href = "../public/index.php">BACK TO MAIN SITE</a>
+        <a class="back-to-main" href = "../index.php">BACK TO MAIN SITE</a>
     </p>
 </section>
 </body>
 </html>
-<?php
-

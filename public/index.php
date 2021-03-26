@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/png" href="images/Mario-icon.png" />
-    <title>CV Mario</title>
+    <title>Mario's Online CV</title>
 </head>
 <body>
     <header id="navHeader">
@@ -16,7 +16,6 @@
             </a>
             <div class="mobile-menu" id="mobile-menu">
                 <a href=""><img class="burger-menu-icon" src="images/icon_questionblock.png" alt="question block"></a>
-                <a class="list" href = "#presentation">PRESENTATION</a>
                 <a class="list" href = "#experience">EXPERIENCES</a>
                 <a class="list" href = "#skills">COMPETENCES</a>
                 <a class="list" href = "#langages">LANGUES</a>
@@ -25,7 +24,6 @@
             </div>
         </nav>
         <div class="full-screen-menu">
-            <a href = "#presentation">PRESENTATION</a>
             <a href = "#experience">EXPERIENCES</a>
             <a href = "#skills">COMPETENCES</a>
             <a href = "#langages">LANGUES</a>
@@ -37,8 +35,11 @@
             <img class = "ImgMarioHalf" src= "images/mario_cache.png" alt="Mario_demi_tete">
         </div>
     </header>
-    <main>      
-        <section class="experience" id="experience">
+
+    <main> 
+        
+ <section class="experience" id="experience">
+    <div class="mainContainer">
             <div class="intro-container">
                 <h2>Experience</h2>
                 <p class="intro-paragraph">Je suis l'homme aux mille talents! Les gens me prennent souvent pour un simple plombier, mais ce qu'ils ne savent pas c'est que j'ai exercé une miltitudes d'autres professions!</p>
@@ -94,60 +95,78 @@
                 </div>
             </div>
         </section>
+        
+        <div class=holidays>
+            <img class="marioRacoon" src="images/icons/Racoon_Mario_24649.ico"/>
+        </div>
+        
         <section class="skills" id="skills"> 
-            <div class = "marioDubTitre">
-                <h2>Mes Competences</h2>
-                <p><img src="images/skills/Mariodab.png" alt="Mario dab" class ="mariodab"></p>
-            </div>
-            <div class="card-container">
-                <div class="card">
-                    <div class="imgTitre">
-                        <img class="icon" src="images/skills/fiveblue.png" alt="Mario Tennis">
-                        <h3>Travail en equipe</h3>
-                    </div>
-                    <div class = "textCard">
-                        <p>J'aime le travail d'équipe mais j'aime la bataille car je suis un gagnant.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="imgTitre">
-                        <img class="icon" src="images/skills/hundredblue.png" alt="Mario Tennis">
-                        <h3>Bilingue</h3>
-                    </div>
-                    <div class = "textCard">
-                        <p>J ai travaillé dans tous les pays et je parle presque toutes les langues du monde.</p>
+            
+                <h2>Competences</h2>
 
+
+            
+            
+            
+            
+                <div class="card-container">
+                    <div class="card">
+                        <div class="imgTitre">
+                            <img class="icon" src="images/skills/fiveblue.png" alt="Mario Tennis">
+                            <h3>Travail en equipe</h3>
+                        </div>
+                        <div class = "textCard">
+                            <p>J'aime le travail d'équipe mais j'aime la bataille car je suis un gagnant.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="imgTitre">
-                        <img class="icon" src="images/skills/hundredblue.png" alt="Mario Tennis">
-                        <h3>Polyvalence</h3>
+                    <div class="card">
+                        <div class="imgTitre">
+                            <img class="icon" src="images/skills/hundredblue.png" alt="Mario Tennis">
+                            <h3>Bilingue</h3>
+                        </div>
+                        <div class = "textCard">
+                            <p>J ai travaillé dans tous les pays et je parle presque toutes les langues du monde.</p>
+
+                        </div>
                     </div>
-                    <div class = "textCard">
-                        <p>Avec tous les métiers que j'ai fait, je me suis toujours adapté aux mondes qui m'entouraient.</p>
+                    <div class="card">
+                        <div class="imgTitre">
+                            <img class="icon" src="images/skills/hundredblue.png" alt="Mario Tennis">
+                            <h3>Polyvalence</h3>
+                        </div>
+                        <div class = "textCard">
+                            <p>Avec tous les métiers que j'ai fait, je me suis toujours adapté aux mondes qui m'entouraient.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="imgTitre">
-                        <img class="icon" src="images/skills//hundredblue.png" alt="Mario Tennis">
-                        <h3>Optimisme</h3>
-                    </div>
-                    <div class = "textCard">
-                        <p>Toujours optimiste dans toutes les conditions même devant un gros méchant, je sais que je peux le gagner.</p>
+                    <div class="card">
+                        <div class="imgTitre">
+                            <img class="icon" src="images/skills/hundredblue.png" alt="Mario Tennis">
+                            <h3>Optimisme</h3>
+                        </div>
+                        <div class = "textCard">
+                            <p>Toujours optimiste dans toutes les conditions même devant un gros méchant, je sais que je peux le gagner.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
+
+        <div class=holidays>
+            <img class="marioRacoon" src="images/icons/Racoon_Mario_24649.ico"/>
+        </div>
+
         <section class="langages" id="langages">
+            <div class="mainContainer">
             <h2>Langues </h2>
+
             <div class="flagsCards">
                 <div class="card">
                     <figure class="flag">
                         <img class="flag-img" src="https://flagpedia.net/data/flags/w580/fr.png" alt="French Flag">
                         <img class="mario-head-flag" src="images/marioHeadFlags.png" alt="mario head">
                         <figcaption>
-                          <h3>Francais></h3>
+                          <h3>Francais</h3>
                         </figcaption>
                     </figure>
                     <p>C'est parti !!!</p>
@@ -203,28 +222,37 @@
                     <p>Vamos !!!</p>
                 </div>
             </div>
+            </div>
+
+            
         </section>
+
+        <div class=holidays>
+            <img class="marioRacoon" src="images/icons/Racoon_Mario_24649.ico"/>
+        </div>
+
         <section class="hobbies" id="hobbies">
-            <br /><br />
+        <br /><br />
             <h2>Loisirs</h2>
-            <br /><br />
-            <div class="left">
-            <p>LES HOBBIES</p>
-            </div>
-            <div class="right">
+        <br /><br />
+
+        
+
+        <div class="right">
+          <br />
+          <p>
+            Mario sauve régulièrement la princesse Peach dans le royaume des
+            champignons et combats les méchants!
             <br />
-            <p>
-                Mario sauve régulièrement la princesse Peach dans le royaume des
-                champignons et combats les méchants!
-                <br /><br />
-                Pour se détendre il fait beaucoup de sports comme des courses de
-                Kart.
-                <br /><br />
-                Un peu de bricolage pour la créativité, Mario a plus d'une corde à
-                son arc!
-            </p>
-            </div>
+            Pour se détendre il fait beaucoup de sports comme des courses de
+            Kart.
             <br />
+            Un peu de bricolage pour la créativité, Mario a plus d'une corde à
+            son arc!
+          </p>
+        </div>
+
+        <br />
             <div class="card-container">
                 <div class="card">
                     <div class="imgTitre">
@@ -232,7 +260,7 @@
                         <h3>Sauveur de Princesse</h3>
                     </div>
                     <div class = "textCard">
-                        <p>Être un gentleman n’est pas qu’un hobbie, c’est une philosphie! Je ne me lasse jamais de sauver la princesse Peach, qui se fait régulièrement kidnapper par Bowser.</p>
+                        <p>Être un gentleman n’est pas qu’un hobbie, c’est une philosophie! Je ne me lasse jamais de sauver la princesse Peach, qui se fait régulièrement kidnapper par Bowser.</p>
                     </div>
                 </div>
                 <div class="card">
@@ -282,9 +310,11 @@
                         </p>
                     </div>
                 </div>
+                <div class="backgroundBlocks"></div>
             </div>
         </section>
     </main>
+
     <footer>
         <div class="decor block-relative">
             <h2>Contact </h2>
@@ -314,7 +344,7 @@
             </div>
             <div class="contact" id="contact">
 
-                <form class="contact-form block-absolute" action="thanks.php" method="POST" >
+                <form class="contact-form block-absolute" action="pages/thanks.php" method="POST" >
     
                     <div class="body-form">
                         <label for="lastname">NOM</label>

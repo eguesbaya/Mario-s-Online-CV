@@ -7,13 +7,10 @@
     --cubeWidthHeight: 355px;
 }
 
-
-
 .card h3{
     font-family: var(--font-titles);
     color: var(--font-medium);
     letter-spacing: var(--spacing-letters-titles);
-    
    /* padding: var( --spacing8px);*/
 }
 
@@ -31,22 +28,17 @@
     background-image: var(--CardsbarckgroundImage);
     background-size:100%;
     background-repeat: no-repeat;
-
-   width: var(--cubeWidthHeight);
-   height: var(--cubeWidthHeight);
-
-    
+    width: var(--cubeWidthHeight);
+    height: var(--cubeWidthHeight);
     margin: 40px;
     display:flex;
     flex-direction: column;
     justify-content: center;
-    
     position:relative;
 }
 
 .imgTitre{
     text-align: center;  
-    
 }
 
 
