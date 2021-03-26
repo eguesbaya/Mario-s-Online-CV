@@ -14,7 +14,6 @@
 }
 
 
-
 .experience h2 {
     font-family: var(--font-titles);
     color: var(--font-light);
@@ -51,7 +50,6 @@
    align-items: stretch;
     flex-wrap: wrap;
 }
-
 
 
 .experience img{
