@@ -400,6 +400,7 @@ footer h2{
     }
 
     footer {
+        height: 550px;
         position: relative;
         justify-content: center;
         text-align: center;
